@@ -138,9 +138,6 @@ The `num_stars` property contains the number of users who have starred this file
 have starred it. The `is_starred` property is present and true if the calling user has starred the file, else
 it is omitted.
 
-Clients can use the `file_deleted` response to differentiate between files that have actually been removed and those who are missing
-due to user error, downtime, or network conditions.
-
 The `initial_comment` will be a comment from the file uploader, and will only be set when the uploader commented on the file at the 
 time of upload. Clients can use this to display the comment with the file when announcing new file uploads.
 
