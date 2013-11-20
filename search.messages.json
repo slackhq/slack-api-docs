@@ -1,4 +1,6 @@
 {
+	"desc": "Search for messages matching a query",
+
 	"args": {
 		"query": {
 			"required"	: true,
