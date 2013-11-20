@@ -47,7 +47,7 @@ to get the next "page" of messages.
 Messages of type `"message"` are user-entered text messages sent to the channel, while other types
 are events that happened within the channel. All messages have both a `type` and a sortable
 `ts`, but the other fields depend on the `type`. For a list of all possible events,
-see the <a href="#">channel events</a> documentation.
+see the [channel messages](/docs/messages) documentation.
 
 If a message has been starred by the calling user, the `is_starred` property will be present and
 true. This property is only added for starred items, so is not present in the majority of messages.
