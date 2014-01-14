@@ -77,6 +77,39 @@ version of the message. Clients should use this to replace their own local versi
 urls are correctly highlighted.
 
 
+## Parsing modes
+
+By default, messages you pass to API methods and webhooks will be assumed to be pre-formatted based on
+the above spec. That is, you can include marked up URLs, user links, channel links and commands, but 
+we will still linkify any non-linked URLs present in your message.
+
+    IN  : Foo <!everyone> bar http://test.com
+    OUT : Foo <!everyone> bar <http://test.com>
+
+By default, Slack will not linkify channel names (starting with a '#') and usernames (starting with
+an '@'). You can enable this behavior by passing `link_names=1` as an argument. This behavior is always 
+enabled in `parse=full` mode (see below).
+
+    IN  : Hello @bob, say hi to @everyone in #general
+    OUT : Hello <@U123|bob>, say hi to <!everyone> in <#C1234|general>
+
+If you don't want Slack to perform _any_ processing on your message, pass an argument of `parse=none`.
+
+    IN  : Foo <!everyone> bar http://test.com
+    OUT : Foo <!everyone> bar http://test.com
+
+(In this case, Slack will still test the validity of your markup - we wont send invalid messages to clients).
+
+If you want Slack to treat your message as completely unformatted, pass `parse=full`. This will ignore 
+any markup formatting you added to your message.
+
+    IN  : Foo <!everyone> bar http://test.com
+    OUT : Foo &lt;!everyone&gt; bar <http://test.com>
+
+In full parse mode, we will find and linkify URLs, channel names (starting with a '#') and usernames (starting 
+with an '@').
+
+
 ## API URLs
 
 URLs that have a protocol of `api::` must be handled separately from normal URLs. The intention is that clicks

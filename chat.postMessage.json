@@ -1,0 +1,35 @@
+{
+	"desc": "Send a message to a channel",
+
+	"args": {
+		"channel": {
+			"type"		: "channel",
+			"required"	: true,
+			"desc"		: "Channel to send message to. Can be a public channel, private group or IM channel. Can be an encoded ID, or a name."
+		},
+		"text": {
+			"required"	: true,
+			"example"	: "Hello world",
+			"desc"		: "Text of the message to send. See below for an explanation of formatting."
+		},
+		"username": {
+			"required"	: false,
+			"example"	: "My Bot",
+			"desc"		: "Name of bot."
+		},
+		"parse": {
+			"example"	: "full",
+			"desc"		: "Change how messages are treated. See below."
+		},
+		"link_names": {
+			"example"	: "1",
+			"desc"		: "Find and link channel names and usernames."
+		}
+	},
+
+	"errors": {
+
+		"channel_not_found"	: "Value passed for `channel` was invalid.",
+		"is_archived"		: "Channel has been archived."
+	}
+}
