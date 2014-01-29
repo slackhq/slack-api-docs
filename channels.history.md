@@ -42,7 +42,9 @@ The `latest` and `oldest` timestamps (if specified as arguments) are returned, a
 with the most recent 100 messages from between (not inclusive) the two timestamps. If there were more than
 100 messages between those two points, then `has_more` will be true. In this case, a client can 
 make another call, using the `ts` value of the final message as the `latest` param,
-to get the next "page" of messages.
+to get the next "page" of messages. The `is_limited` boolean is only included for free teams that have
+reached the free message limit. If true, there are messages before the current result set, but they
+are beyond the message limit.
 
 Messages of type `"message"` are user-entered text messages sent to the channel, while other types
 are events that happened within the channel. All messages have both a `type` and a sortable
