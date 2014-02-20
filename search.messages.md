@@ -82,8 +82,6 @@ at a lower priority. To specifically search within a channel, group, or DM, add 
 For IM results, the `type` is set to `"im"` and the `channel.name` property contains the user ID of the 
 target user. For private group results, type is set to `"group"`.
 
-To further expand the context around a result, see the [search.context](/methods/search.context) method.
-
 All search methods support the `highlight` parameter. If specified, the matching query terms will be marked 
 up in the results so that clients may replace them with appropriate highlighting markers
 (e.g. `<span class="highlight"></span>`). The UTF-8 markers we use are:
