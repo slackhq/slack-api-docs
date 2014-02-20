@@ -32,6 +32,16 @@
 		"unfurl_links": {
 			"example"	: "1",
 			"desc"		: "Pass 1 to enable unfurling of primarily text-based content."
+		},
+		"icon_url": {
+			"required"	: false,
+			"example"	: "http://lorempixel.com/48/48",
+			"desc"		: "URL to an image to use as the icon for this message"
+		},
+		"icon_emoji": {
+			"required"	: false,
+			"example"	: ":chart_with_upwards_trend:",
+			"desc"		: "emoji to use as the icon for this message. Overrides `icon_url`."
 		}
 	},
 
