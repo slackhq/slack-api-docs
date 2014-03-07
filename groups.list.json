@@ -1,3 +1,11 @@
 {
-	"desc": "List of groups in the team that the calling user has access to."
+	"desc": "List of groups in the team that the calling user has access to.",
+
+	"args": {
+		"exclude_archived": {
+			"example"	: 1,
+			"default"	: 0,
+			"desc"		: "Don't return archived groups."
+		}
+	}
 }
