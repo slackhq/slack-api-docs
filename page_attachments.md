@@ -5,7 +5,7 @@ It is possible to create more richly-formatted messages using Attachments.
 Attachments can be added to messages in different ways:
 
 * For [Incoming Webhooks](https://my.dev.slack.com/services/new/incoming-webhook), send a regular payload, but include an `attachments` array, where each element is a hash containing an attachment.
-* For [the API](/methods/chat.postMessage), include an `attachments` property, containing a JSON-encoded array of attachment hashesh.
+* For [the API](/methods/chat.postMessage), include an `attachments` property, containing a JSON-encoded array of attachment hashes.
 * For [Hammock](https://github.com/tinyspeck/hammock), pass an array of attachment hashes.
 
 
