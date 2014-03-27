@@ -1,0 +1,19 @@
+{
+	"desc": "Get info about a team file",
+
+	"args": {
+		"file": {
+			"type"		: "file",
+			"required"	: true,
+			"desc"		: "File to fetch info for"
+		}
+	},
+
+	"has_paging"	: true,
+	"default_count"	: 100,
+
+	"errors": {
+		"file_not_found"	: "Value passed for `file` was invalid",
+		"file_deleted"		: "The requested file has been deleted"
+	}
+}
