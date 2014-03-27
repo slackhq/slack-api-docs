@@ -30,17 +30,17 @@ the most recent first.
 
 The paging information contains the `count` of files returned, the `total` number of
 files matching the filter (if any was supplied), the `page` of results returned in this response and
-the total numebr of `pages` available.
+the total number of `pages` available.
 
 There are 3 different classes of files in Slack: hosted, editable and external.
 
 * **Hosted** files are stored on the CDN. This includes images, PDFs, videos, zip files, and all of the normal
-  things you'd think of as files. To upload a hosted file, post it using an `enctype` of `multipart/form-data`.
+  things you'd think of as files. To upload a hosted file, POST it using an `enctype` of `multipart/form-data`.
 
 * **Editable** files are stored in the database. This includes uploaded code files, snippets and posts. To upload
   an editable file, use an `enctype` of `multipart/form-data` or include the content in the `content` POST param.
 
-* **External** files are references to files stored on Google Docs, in Dropbox or Box and other similar integrations.
+* **External** files are references to files stored on Google Docs, in Dropbox, or other similar integrations.
   External files are not uploaded via `files.upload`.
 
 Each file hash contains details about a single file object:
