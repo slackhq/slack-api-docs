@@ -134,7 +134,7 @@ as normal with the specified parameters and using the user's token.
 
 ## Emoji
 
-Slack attempts to normalize emoji across multiple platforms using the follow approach:
+Slack attempts to normalize emoji across multiple platforms using the following approach:
 
 1. All emoji sent to Slack (as chat message to the message server, or arguments to the API) are translated into
    the common 'colon' format (e.g. `:smile:`)
@@ -145,4 +145,47 @@ The Slack message server and API handle conversion from several binary emoji for
 (used by OSX 10.7+ and iOS 6+), the Softbank format (used by iOS 5) and the Google format (used by some Android
 devices). These Unicode code points will be converted into their colon-format equivalents.
 
-The list of emoji supported are taken from https://github.com/iamcal/emoji-data
+The list of emoji supported are taken from [https://github.com/iamcal/emoji-data](https://github.com/iamcal/emoji-data)
+
+
+## Reduced Markdown Message Formatting
+
+*Message formatting is currently in beta release, and a team admin will have to enable it for you here:* [https://my.slack.com/admin/settings](https://my.slack.com/admin/settings)
+
+Slack messages may contain a reduced set of Markdown for message formatting. Supported Markdown includes: \`\`\`pre\`\`\`, \`code\`, \_italic\_, and \*bold\*. By default, clients will parse Markdown on user-sent messages but not bot messages or attachments. To enable formatting on a non-user message, set the `mrkdwn` property to `true`. To enable formatting on attachment fields, set the `mrkdwn_in` array on each attachment to the list of fields to process. Some examples:
+
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1358877455.000010",
+        "text": "*bold* `code` _italic_",
+        "username": "markdownbot",
+        "mrkdwn": true
+    }
+
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1358877455.000010",
+
+        "attachments": [
+            {
+                "from_url": "https://twitter.com/schneiderb/status/402478331238440960",
+                "fallback": "Tweet from @scheiderb: Thanks @slackhq for the invitation, testing *right now!*",
+
+                "service_icon": "https://abs.twimg.com/favicons/favicon.png",
+                "service_url": "https://twitter.com/",
+
+                "author_name": "Brendan J Schneider",
+                "author_link": "https://twitter.com/schneiderb/",
+                "author_icon": "https://pbs.twimg.com/profile_images/3471469385/6eebe82e8f3da54df51462cccf6c69bf_bigger.jpeg",
+                "author_subname": "@schneiderb",
+
+                "text": "Thanks @slackhq for the invitation, testing *right now!*",
+
+                "mrkdwn_in": ["text"]
+            }
+        ]
+    }
+
+Valid values for `mrkdwn_in` are: `['pretext', 'text', 'title', 'fields']`
