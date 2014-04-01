@@ -150,8 +150,6 @@ The list of emoji supported are taken from [https://github.com/iamcal/emoji-data
 
 ## Reduced Markdown Message Formatting
 
-*Message formatting is currently in beta release, and a team admin will have to enable it for you here:* [https://my.slack.com/admin/settings](https://my.slack.com/admin/settings)
-
 Slack messages may contain a reduced set of Markdown for message formatting. Supported Markdown includes: \`\`\`pre\`\`\`, \`code\`, \_italic\_, and \*bold\*. By default, clients will parse Markdown on user-sent messages but not bot messages or attachments. To enable formatting on a non-user message, set the `mrkdwn` property to `true`. To enable formatting on attachment fields, set the `mrkdwn_in` array on each attachment to the list of fields to process. Some examples:
 
     {
