@@ -137,8 +137,6 @@ Channel purpose change
 		"icons": {} // optional hash of icons to use for displaying the bot (overrides what is set in `bot_id`)
 	}
 
-For more information about bot names and icons, see the [bots](/docs/bots) documentation.
-
 File shared with channel
 
 	{
