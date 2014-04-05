@@ -30,8 +30,7 @@ The response envelope contains paging and result information:
 	    }
 	}
 
-The actual matches are returned as hashes containing file information, in the same format used by
-[files.list](/methods/files.list).
+Matches contains a list of [file objects](/types/file).
 
 All search methods support the `highlight` parameter. If specified, the matching query terms will be marked 
 up in the results so that clients may replace them with appropriate highlighting markers
