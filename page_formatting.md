@@ -155,35 +155,19 @@ Slack messages may be formatted using a simple markup language similar to [Markd
 By default, clients will parse message formatting markup on user-sent messages but not bot messages or attachments. To enable formatting on a non-user message, set the `mrkdwn` property to `true`. To enable formatting on attachment fields, set the `mrkdwn_in` array on each attachment to the list of fields to process. Some examples:
 
     {
-        "type": "message",
-        "subtype": "bot_message",
-        "ts": "1358877455.000010",
         "text": "*bold* `code` _italic_",
         "username": "markdownbot",
         "mrkdwn": true
     }
 
     {
-        "type": "message",
-        "subtype": "bot_message",
-        "ts": "1358877455.000010",
-
         "attachments": [
             {
-                "from_url": "https://twitter.com/schneiderb/status/402478331238440960",
-                "fallback": "Tweet from @scheiderb: Thanks @slackhq for the invitation, testing *right now!*",
+                "title": "*Title*"
+                "fallback": "Title: testing *right now!*",
+                "text": "Testing *right now!*",
 
-                "service_icon": "https://abs.twimg.com/favicons/favicon.png",
-                "service_url": "https://twitter.com/",
-
-                "author_name": "Brendan J Schneider",
-                "author_link": "https://twitter.com/schneiderb/",
-                "author_icon": "https://pbs.twimg.com/profile_images/3471469385/6eebe82e8f3da54df51462cccf6c69bf_bigger.jpeg",
-                "author_subname": "@schneiderb",
-
-                "text": "Thanks @slackhq for the invitation, testing *right now!*",
-
-                "mrkdwn_in": ["text"]
+                "mrkdwn_in": ["text", "title"]
             }
         ]
     }
