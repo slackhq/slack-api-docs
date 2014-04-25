@@ -167,9 +167,9 @@ By default, clients will parse message formatting markup on user-sent messages b
                 "fallback": "Title: testing *right now!*",
                 "text": "Testing *right now!*",
 
-                "mrkdwn_in": ["text", "title"]
+                "mrkdwn_in": ["text", "title", "fallback"]
             }
         ]
     }
 
-Valid values for `mrkdwn_in` are: `['pretext', 'text', 'title', 'fields']`
+Valid values for `mrkdwn_in` are: `["pretext", "text", "title", "fields", "fallback"]`
