@@ -152,12 +152,18 @@ The list of emoji supported are taken from [https://github.com/iamcal/emoji-data
 
 Slack messages may be formatted using a simple markup language similar to [Markdown](https://daringfireball.net/projects/markdown/). Supported formatting includes: `` ```pre``` ``, `` `code` ``, `_italic_`, and `*bold*`; full details are available on our [help site](https://slack.zendesk.com/hc/en-us/articles/202288908-How-can-I-add-formatting-to-my-messages-).
 
-By default, clients will parse message formatting markup on user-sent messages but not bot messages or attachments. To enable formatting on a non-user message, set the `mrkdwn` property to `true`. To enable formatting on attachment fields, set the `mrkdwn_in` array on each attachment to the list of fields to process. Some examples:
+By default bot message text will be formatted, but attachments are not. To disable formatting on a non-user message, set the `mrkdwn` property to `false`. To enable formatting on attachment fields, set the `mrkdwn_in` array on each attachment to the list of fields to process. Some examples:
 
     {
         "text": "*bold* `code` _italic_",
         "username": "markdownbot",
         "mrkdwn": true
+    }
+
+    {
+        "text": "*not bold*",
+        "username": "markdownbot",
+        "mrkdwn": false
     }
 
     {
