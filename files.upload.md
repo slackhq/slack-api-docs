@@ -1,8 +1,6 @@
 
 This method allows you to create or upload an existing file.
 
-Full clients should use [files.uploadAsync](/methods/files.uploadAsync) instead.
-
 
 ## Arguments
 
