@@ -48,6 +48,7 @@
 	"errors": {
 
 		"channel_not_found"	: "Value passed for `channel` was invalid.",
-		"is_archived"		: "Channel has been archived."
+		"is_archived"		: "Channel has been archived.",
+		"rate_limited"      : "Application has posted too many messages, [read the Rate Limit documentation](/docs/rate-limits) for more information"
 	}
 }
