@@ -57,7 +57,7 @@ You can then use this token to call protected API methods on behalf of the user.
 
 ### Step 2a - Denied Requests
 
-If the user user denies your request, Slack redirects back to your site with an `error` parameter.
+If the user denies your request, Slack redirects back to your site with an `error` parameter.
 
     http://yourapp.com/oauth?
       error=access_denied
