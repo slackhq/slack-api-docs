@@ -9,11 +9,11 @@ This method allows you to create or upload an existing file.
 
 The content of the file can either be posted using an `enctype` of `multipart/form-data` (with the file parameter named `file`), 
 in the usual way that files are uploaded via the browser, or the content of the file can be sent as a POST var called `content`.
-The latter should be used for creating a "file" from a long message/paste and forces "editbale" mode. 
+The latter should be used for creating a "file" from a long message/paste and forces "editable" mode.
 
 In both cases, the type of data in the file will be intuited from the filename and the magic bytes in the file, for supported 
 formats. Sending a `filetype` parameter will override this behavior (if a valid type is sent). Files uploaded via 
-`multipart/form-data` will be stored either in hosted or editbale mode, based on certain heuristics (determined 
+`multipart/form-data` will be stored either in hosted or editable mode, based on certain heuristics (determined
 type, file size).
 
 The file can also be shared directly into channels on upload, by specifying an optional argument `channels`. Channel IDs should
