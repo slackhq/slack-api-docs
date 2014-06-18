@@ -35,13 +35,13 @@ have happened at upload time via the `channels` argument).
 
 ## Examples
 
-Upload an dramacat.gif and share it in channel, using `multipart/form-data`:
+Upload "dramacat.gif" and share it in channel, using `multipart/form-data`:
 
-	curl -F file=@dramacat.gif -F channels=C024BE91L -F token=$TOKEN https://slack.com/api/files.upload
+	curl -F file=@dramacat.gif -F channels=C024BE91L -F token=xxxx-xxxxxxxxx-xxxx https://slack.com/api/files.upload
 
 Create an editable file containing the text "Hello":
 
-	curl -F content="Hello" -F token=$TOKEN https://slack.com/api/files.upload
+	curl -F content="Hello" -F token=xxxx-xxxxxxxxx-xxxx https://slack.com/api/files.upload
 
 
 ## Errors
