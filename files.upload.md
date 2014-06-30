@@ -22,7 +22,7 @@ be comma separated if there is more than one.
 
 ## Response
 
-The return value from the upload API call, assuming it's successful, is the standard file response (see [files.list](/methods/files.list)).
+If successful, the response will include a [file object](/types/file).
 
 	{
 	    "ok": true,
