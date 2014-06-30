@@ -29,9 +29,9 @@ If successful, the response will include a [file object](/types/file).
 	    "file": {...}
 	}
 
-All newly-uploaded files are private, and only visible to the owner, until they are shared into a public channel (which could 
-have happened at upload time via the `channels` argument).
-
+By default all newly-uploaded files are private and only visible to the owner.
+They become public once they are shared into a public channel (which can
+happen at upload time via the `channels` argument).
 
 ## Examples
 
