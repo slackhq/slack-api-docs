@@ -8,6 +8,9 @@ created.
 
 ## Response
 
+If successful, the command returns a [channel object](/types/channel), including state information:
+
+
 	{
 	    "ok": true,
 	    "channel": {
@@ -35,11 +38,10 @@ created.
 		},
 	}
 
-If you are already in the channel, the response is slightly different. Some
-limited channel information is returned to allow clients to match the
-requested channel to one already in their roster. This allows a client to
-see that the request to join `GeNERaL` is the same as the channel `#general`
-that the user is already in:
+If you are already in the channel, the response is slightly different.
+`already_in_channel` will be true, and a limited `channel` object will be
+returned. This allows a client to see that the request to join `GeNERaL` is
+the same as the channel `#general` that the user is already in:
 
 	{
 	    "ok": true,
