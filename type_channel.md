@@ -53,7 +53,7 @@ disabled.
 
 `is_member` will be true if the calling member is part of the channel.
 
-Some API methods (such as [channel.join](/methods/channel.join)) will
+Some API methods (such as [channels.join](/methods/channels.join)) will
 include extra state information for channels when the calling user is a
 member. `last_read` is the timestamp for the last message the calling user has
 read in this channel. `unread_count` is a count of messages that the calling
