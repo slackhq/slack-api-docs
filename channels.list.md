@@ -11,6 +11,8 @@ is also returned.
 
 ## Response
 
+Returns a list of [channel objects](/types/channel):
+
 	{
 	    "ok": true,
 	    "channels": [
