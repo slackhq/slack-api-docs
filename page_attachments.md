@@ -11,7 +11,7 @@ Attachments can be added to messages in different ways:
 
 ## Attachment structure
 
-Messages can have zero of more attachments, defined as an array. Each hash in that array will contain multiple properties:
+Messages can have zero or more attachments, defined as an array. Each hash in that array will contain multiple properties:
 
 	{
 		"fallback": "Required text summary of the attachment that is shown by clients that understand attachments
