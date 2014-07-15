@@ -1,5 +1,5 @@
 {
-	"desc": "Join a channel, creating it if needed",
+	"desc": "Joins a channel, creating it if needed.",
 
 	"args": {
 		"name": {

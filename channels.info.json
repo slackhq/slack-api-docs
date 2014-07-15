@@ -1,5 +1,5 @@
 {
-	"desc": "Get info about a channel",
+	"desc": "Gets information about a channel.",
 
 	"args": {
 		"channel": {

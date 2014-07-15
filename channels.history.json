@@ -1,5 +1,5 @@
 {
-	"desc": "Fetch history of messages and events from a given channel",
+	"desc": "Fetches history of messages and events from a channel.",
 
 	"args": {
 		"channel": {

@@ -1,5 +1,5 @@
 {
-	"desc": "Upload or create a file",
+	"desc": "Uploads or creates a file.",
 
 	"args": {
 		"file": {

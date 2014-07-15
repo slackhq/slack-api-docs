@@ -1,5 +1,5 @@
 {
-	"desc": "Invite a user to a channel",
+	"desc": "Invites a user to a channel.",
 
 	"args": {
 		"channel": {

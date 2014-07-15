@@ -1,5 +1,5 @@
 {
-	"desc": "Get info about a team file",
+	"desc": "Gets information about a team file.",
 
 	"args": {
 		"file": {

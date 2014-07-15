@@ -1,5 +1,5 @@
 {
-	"desc": "List & filter team files",
+	"desc": "Lists stars for a user.",
 
 	"args": {
 		"user": {

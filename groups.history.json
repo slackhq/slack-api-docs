@@ -1,5 +1,5 @@
 {
-	"desc": "Fetch history of messages and events from a given private group",
+	"desc": "Fetches history of messages and events from a private group.",
 
 	"args": {
 		"channel": {

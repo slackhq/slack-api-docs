@@ -1,5 +1,5 @@
 {
-	"desc": "Leave a channel",
+	"desc": "Leaves a channel.",
 
 	"args": {
 		"channel": {

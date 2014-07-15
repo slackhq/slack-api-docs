@@ -1,5 +1,5 @@
 {
-	"desc": "List & filter team files",
+	"desc": "Lists & filters team files.",
 
 	"args": {
 		"user": {

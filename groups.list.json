@@ -1,5 +1,5 @@
 {
-	"desc": "List of groups in the team that the calling user has access to.",
+	"desc": "Lists private groups that the calling user has access to.",
 
 	"args": {
 		"exclude_archived": {

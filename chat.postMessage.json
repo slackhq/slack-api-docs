@@ -1,5 +1,5 @@
 {
-	"desc": "Send a message to a channel",
+	"desc": "Sends a message to a channel.",
 
 	"args": {
 		"channel": {

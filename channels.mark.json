@@ -1,5 +1,5 @@
 {
-	"desc": "Set read cursor in a channel",
+	"desc": "Sets the read cursor in a channel.",
 
 	"args": {
 		"channel": {

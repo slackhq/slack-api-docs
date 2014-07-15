@@ -1,5 +1,5 @@
 {
-	"desc": "List of all channels in the team.",
+	"desc": "Lists all channels in a Slack team.",
 
 	"args": {
 		"exclude_archived": {

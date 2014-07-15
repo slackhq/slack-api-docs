@@ -1,5 +1,5 @@
 {
-	"desc": "Search for messages matching a query",
+	"desc": "Searches for messages matching a query.",
 
 	"args": {
 		"query": {
