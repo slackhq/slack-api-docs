@@ -110,28 +110,6 @@ In full parse mode, we will find and linkify URLs, channel names (starting with 
 with an '@').
 
 
-## API URLs
-
-URLs that have a protocol of `api::` must be handled separately from normal URLs. The intention is that clicks
-on these URLs perform an API call instead of redirecting to a web page. The format of these URLs is:
-
-    api::method?param1=value1&param2=value2
-
-An example url might be:
-
-    <api::services.mute?service_id=7|Make it stop>
-
-For the above example, the api call
-would look like this:
-
-    services.mute - method
-    token=xxxxx
-    service_id=7
-
-A client MIGHT want to confirm with the user before making these calls, but either way, it will perform an api call
-as normal with the specified parameters and using the user's token.
-
-
 ## Emoji
 
 Slack attempts to normalize emoji across multiple platforms using the following approach:
