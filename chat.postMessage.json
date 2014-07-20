@@ -49,6 +49,8 @@
 
 		"channel_not_found"	: "Value passed for `channel` was invalid.",
 		"is_archived"		: "Channel has been archived.",
+		"msg_too_long"		: "Message text is too long",
+		"no_text"		: "No message text provided",
 		"rate_limited"      : "Application has posted too many messages, [read the Rate Limit documentation](/docs/rate-limits) for more information"
 	}
 }
