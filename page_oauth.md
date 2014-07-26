@@ -38,7 +38,10 @@ If the user accepts your request, Slack redirects back to your site with a tempo
 If the states don't match, the request has been created by a third party and the process should be
 aborted.
 
-If all is well, exchange the code for an access token using the `oauth.access` API method.
+If all is well, exchange the code for an access token using the [`oauth.access`](/methods/oauth.access)
+API method ([method documentation](/methods/oauth.access)).
+
+    https://slack.com/api/oauth.access
 
     client_id     - issued when you created your application (required)
     client_secret - issued when you created your application (required)
