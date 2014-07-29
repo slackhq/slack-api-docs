@@ -17,7 +17,9 @@ For more information, see the [attachments spec](/docs/attachments).
 ## Response
 
 	{
-		"ok": true
+		"ok": true,
+		"ts": "1405895017.000506"
+		"channel": "C024BE91L"
 	}
 
 ## Errors
