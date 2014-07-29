@@ -1,0 +1,29 @@
+{
+	"desc": "Updates a message.",
+
+	"args": {
+		"ts": {
+			"required"	: true,
+			"example"	: "1405894322.002768",
+			"desc"		: "Timestamp of the message to be updated."
+		},
+		"channel": {
+			"type"		: "channel",
+			"required"	: true,
+			"desc"		: "Channel containing the message to be updated."
+		},
+		"text": {
+			"required"	: true,
+			"example"	: "Hello world",
+			"desc"		: "New text for the message, using the [default formatting rules](/docs/formatting)."
+		}
+	},
+
+	"errors": {
+		"message_not_found" : "No message exists with the requested timestamp.",
+		"channel_not_found"	: "Value passed for `channel` was invalid.",
+		"edit_window_closed": "The message cannot be edited due to the team message edit settings",
+		"msg_too_long"		: "Message text is too long",
+		"no_text"			: "No message text provided"
+	}
+}
