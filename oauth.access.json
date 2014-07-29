@@ -1,5 +1,5 @@
 {
-	"desc": "Exchange a temporary OAuth code for an API token.",
+	"desc": "Exchanges a temporary OAuth code for an API token.",
 
 	"args": {
 		"client_id": {
