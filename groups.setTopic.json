@@ -1,5 +1,5 @@
 {
-	"desc": "Set the topic for a private group",
+	"desc": "Sets the topic for a private group.",
 
 	"args": {
 		"channel": {

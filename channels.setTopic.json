@@ -1,5 +1,5 @@
 {
-	"desc": "Set the topic for a channel",
+	"desc": "Sets the topic for a channel.",
 
 	"args": {
 		"channel": {

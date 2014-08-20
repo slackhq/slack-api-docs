@@ -1,5 +1,5 @@
 {
-	"desc": "Set the purpose for a channel",
+	"desc": "Sets the purpose for a channel.",
 
 	"args": {
 		"channel": {

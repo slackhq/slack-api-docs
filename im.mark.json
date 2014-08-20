@@ -1,5 +1,5 @@
 {
-	"desc": "Set read cursor in a direct message channel",
+	"desc": "Sets the read cursor in a direct message channel.",
 
 	"args": {
 		"channel": {

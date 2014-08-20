@@ -1,5 +1,5 @@
 {
-	"desc": "Checks API calling code",
+	"desc": "Checks API calling code.",
 
 	"args": {
 		"error": {

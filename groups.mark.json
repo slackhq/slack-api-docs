@@ -1,5 +1,5 @@
 {
-	"desc": "Set read cursor in a private group",
+	"desc": "Sets the read cursor in a private group.",
 
 	"args": {
 		"channel": {
