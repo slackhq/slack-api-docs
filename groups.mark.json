@@ -17,6 +17,7 @@
 
 	"errors": {
 		"channel_not_found"	: "Value passed for `channel` was invalid.",
+		"is_archived":	"Private group has been archived",
 		"not_in_channel"	: "Caller is not a member of the channel."
 	}
 }
