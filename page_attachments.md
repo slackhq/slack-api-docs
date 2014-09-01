@@ -34,6 +34,8 @@ Messages can have zero or more attachments, defined as an array. Each hash in th
 		]
 	}
 
+For fields that support markup, the [Slack standard message markup](/docs/formatting) must be used.
+
 Here is an example attachment generated from an incoming webhook:
 
 <img src="/img/integrations/incoming_webhook_attachment.v1391019288.png" style="border-radius: 0.5rem; border: 1px solid #DDD;">

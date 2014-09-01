@@ -32,7 +32,9 @@ They are structured in this way so that clients can either support them fully (b
 behavior for each different `subtype`) or can fallback to a simple mode by just showing the `text` of 
 the message. Note that these messages do not come from a user. Message text is typically automatically 
 generated to explain the event, but a full client will format this information specially. The message
-text supports the usual user, channel and URL escaping.
+text supports the usual [user, channel and URL escaping](/docs/formatting).
+
+Messages may optionally include [attachments](/docs/attachments) for display of structured data.
 
 Messages that are part of a channel's history, but should not be displayed to the user, have a special
 `hidden` flag. These messages include records of edits and deletes and other 'invisible' metadata.
