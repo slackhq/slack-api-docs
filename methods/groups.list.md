@@ -10,6 +10,8 @@ The list of (non-deactivated) members in each group is also returned.
 
 ## Response
 
+Returns a list of [group objects](/types/group):
+
 	{
 	    "ok": true,
 	    "groups": [
