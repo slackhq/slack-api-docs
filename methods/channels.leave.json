@@ -5,7 +5,7 @@
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Channel to join"
+			"desc"		: "Channel to leave"
 		}
 	},
 
