@@ -9,6 +9,9 @@ This method returns a list of all users in the team. This includes deleted/deact
 
 ## Response
 
+Returns a list of [user objects](/types/user), in no particular order:
+
+
 	{
 	    "ok": true,
 	    "members": [
@@ -37,16 +40,6 @@ This method returns a list of all users in the team. This includes deleted/deact
 	        ...
 	    ]
 	}
-
-The `members` array contains 1 or more members of the team, in no particular order. For deactivated users,
-`deleted` will be `true`. The `color` field is used in some clients to display a colored 
-username.
-
-The `profile` hash contains as much profile information as the user has supplied - only the `image_*`
-fields are guaranteed to be included. Data that has not been supplied may not be present at all, may be `null` or 
-may contain the empty string (`""`).
-
-The `image_*` fields will always contain `https` URLs to square, web-viewable images (GIFs, JPEGs or PNGs).
 
 
 ## Errors
