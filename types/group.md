@@ -5,6 +5,7 @@ A group object contains information about a private group.
     {
         "id": "G024BE91L",
         "name": "secretplans",
+        "is_group": "true",
         "created": "1360782804",
         "creator": "U024BE7LH",
         "is_archived": false,
