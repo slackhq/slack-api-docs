@@ -9,6 +9,8 @@ This method returns a list of all im channels that the user has.
 
 ## Response
 
+Returns a list of [IM objects](/types/im):
+
     {
         "ok": true,
         "ims": [
