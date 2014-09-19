@@ -1,5 +1,9 @@
 This method is used to invite a user to a private group. The calling user must be a member of the group.
 
+To invite a new member to a group without giving them access to the archives
+of the group call [the `groups.createChild` method](/methods/groups.createChild)
+before inviting.
+
 ## Arguments
 
 {ARGS}
