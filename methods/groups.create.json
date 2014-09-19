@@ -1,0 +1,16 @@
+{
+	"desc": "Creates a private group.",
+
+	"args": {
+		"name": {
+			"required"	: true,
+			"desc"		: "Name of group to create"
+		}
+	},
+
+	"errors": {
+		"no_channel": "No group name was passed.",
+		"restricted_action": "A team preference prevents authenticated user from creating groups.",
+		"name_taken"    : "A group cannot be created with the given name."
+	}
+}
