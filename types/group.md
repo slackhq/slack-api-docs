@@ -38,8 +38,8 @@ disabled.
 
 `topic` and `purpose` provide information about the group topic and purpose.
 
-Some API methods will include extra state information for the group.
-`is_open` shows if the group is open. `last_read` is the timestamp for the
-last message the calling user has read in this group. `unread_count` is a
-count of messages that the calling user has yet to read. `latest` is the
-latest message in the group.
+Some API methods (such as [groups.create](/methods/groups.create)) will
+include extra state information for the group. `is_open` shows if the group is
+open. `last_read` is the timestamp for the last message the calling user has
+read in this group. `unread_count` is a count of messages that the calling
+user has yet to read. `latest` is the latest message in the group.
