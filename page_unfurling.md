@@ -54,6 +54,6 @@ our other APIS:
 ## Custom Attachments
 
 If you'd like more control over the format of the attachments, you can create
-a custom attachment when creating the message. Our
+a custom attachment when posting a message to Slack. Our
 [attachments documentation](/docs/attachments/) gives more details on the
 available options.
