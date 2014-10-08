@@ -43,18 +43,6 @@ Here is an example attachment generated from an incoming webhook:
 
 ## Automatic unfurling
 
-We will automatically fetch and create attachments for certain well-known media urls, but we will not unfurl links
-to primarily text-based content, unless you specify in your payload that you want that.
-If you do, pass `"unfurl_links": true` when sending your message.
-
-Example links that will unfurl without the flag:
-
-* [http://www.youtube.com/watch?v=wq1R93UMqlk](http://www.youtube.com/watch?v=wq1R93UMqlk)
-* [http://www.flickr.com/photos/karstenmay/11787125913/](http://www.flickr.com/photos/karstenmay/11787125913/)
-* [https://twitter.com/tweetsoutloud/status/416692366037094400](https://twitter.com/tweetsoutloud/status/416692366037094400)
-* [http://imgs.xkcd.com/comics/regex_golf.png](http://imgs.xkcd.com/comics/regex_golf.png)
-
-While these will require the flag on the payload to be unfurled:
-
-* [http://www.cnn.com/2014/01/06/tech/web/ces-unveiled/index.html?hpt=hp_c3](http://www.cnn.com/2014/01/06/tech/web/ces-unveiled/index.html?hpt=hp_c3)
-* [https://slack.com/](https://slack.com/)
+Slack can also automatically create attachments based on the contents of URLs
+in the message. Our [unfurling documentation](/docs/unfurling/) gives more
+details on this functionality and how you can control it.

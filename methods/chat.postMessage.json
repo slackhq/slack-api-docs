@@ -30,8 +30,12 @@
 			"desc"		: "Structured message attachments."
 		},
 		"unfurl_links": {
-			"example"	: "1",
-			"desc"		: "Pass 1 to enable unfurling of primarily text-based content."
+			"example"	: "true",
+			"desc"		: "Pass true to enable unfurling of primarily text-based content."
+		},
+		"unfurl_media": {
+			"example"	: "false",
+			"desc"		: "Pass false to disable unfurling of media content."
 		},
 		"icon_url": {
 			"required"	: false,

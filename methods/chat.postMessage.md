@@ -14,6 +14,10 @@ can specify values for `parse` and `link_names` to change formatting behavior.
 The optional `attachments` argument should contain a JSON-encoded array of attachments.
 For more information, see the [attachments spec](/docs/attachments).
 
+By default links to media are unfurled, but links to text content are not. For
+more information on the differences and how to control this, see the
+[the unfurling documentation](/docs/unfurling).
+
 ## Response
 
 	{
