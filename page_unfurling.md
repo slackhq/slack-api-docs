@@ -29,6 +29,14 @@ applies to text based content, `unfurl_media` applies to media based content.
 These flags are mutually exclusive, the `unfurl_links` flag has no effect on
 media content.
 
+There is one notable exception to these rules: we never unfurl links where
+the label is a complete substring of your URL minus the protocol. This is so a
+paragraph of text can contain domain names or abbreviated URLs that are
+treated as a simple reference, and not a link to be unfurled. For example, if
+a message contains a link to "http://example.com" with the label "example.com"
+then that link will not be unfurled. There are more examples of this rule
+below.
+
 Note that our servers need to fetch every URL in a message in order to
 determine what kind of content it references. If you'd like to stop this
 from happening, set both `unfurl_links` and `unfurl_media` to false when posting
@@ -40,16 +48,22 @@ All of these examples are for incoming webhooks, but similar rules apply to
 our other APIS:
 
     # api.slack.com is text based, so this link will not unfurl:
-    {"text": "https://api.slack.com"}
+    {"text": "<https://api.slack.com>"}
 
     # passing "unfurl_links: true means the link will unfurl:
-    {"text": "https://api.slack.com", "unfurl_links": true}
+    {"text": "<https://api.slack.com>", "unfurl_links": true}
 
     # this xkcd link is an image, so the content will be unfurled by default:
-    {"text": "http://imgs.xkcd.com/comics/regex_golf.png"}
+    {"text": "<http://imgs.xkcd.com/comics/regex_golf.png>"}
 
     # we can disable that using the unfurl_media flag:
-    {"text": "http://imgs.xkcd.com/comics/regex_golf.png", "unfurl_media": false}
+    {"text": "<http://imgs.xkcd.com/comics/regex_golf.png>", "unfurl_media": false}
+
+    # even through unfurl_links is true, this link has a label that matches the URL minus the protocol, so the link will not unfurl:
+    {"text": "<https://api.slack.com|api.slack.com>", "unfurl_links": true}
+
+    # The label for this link does not match the URL minus the protocol, so this link will unfurl:
+    {"text": "<https://api.slack.com|Slack API>", "unfurl_links": true}
 
 ## Custom Attachments
 
