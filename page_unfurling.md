@@ -59,7 +59,7 @@ our other APIS:
     # we can disable that using the unfurl_media flag:
     {"text": "<http://imgs.xkcd.com/comics/regex_golf.png>", "unfurl_media": false}
 
-    # even through unfurl_links is true, this link has a label that matches the URL minus the protocol, so the link will not unfurl:
+    # even though unfurl_links is true, this link has a label that matches the URL minus the protocol, so the link will not unfurl:
     {"text": "<https://api.slack.com|api.slack.com>", "unfurl_links": true}
 
     # The label for this link does not match the URL minus the protocol, so this link will unfurl:
