@@ -12,14 +12,14 @@
 			"type"		: "timestamp",
 			"required"	: false,
 			"default"	: "now",
-			"desc"		: "Timestamp of the oldest recent seen message."
+			"desc"		: "Latest message timestamp to include in results."
 		},
 
 		"oldest": {
 			"type"		: "timestamp",
 			"required"	: false,
 			"default"	: "0",
-			"desc"		: "Timestamp of the latest previously seen message."
+			"desc"		: "Oldest message timestamp to include in results."
 		},
 
 		"count": {
