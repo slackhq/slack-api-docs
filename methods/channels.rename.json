@@ -1,11 +1,11 @@
 {
-	"desc": "Sets the read cursor in a channel.",
+	"desc": "Renames a channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Channel to set rename"
+			"desc"		: "Channel to rename"
 		},
 
 		"name": {

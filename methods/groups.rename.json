@@ -1,16 +1,16 @@
 {
-	"desc": "Sets the read cursor in a channel.",
+	"desc": "Renames a private group.",
 
 	"args": {
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Channel to set rename"
+			"desc"		: "Group to rename"
 		},
 
 		"name": {
 			"required"	: true,
-			"desc"		: "New name for channel."
+			"desc"		: "New name for group."
 		}
 	},
 
