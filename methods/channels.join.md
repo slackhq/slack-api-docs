@@ -16,7 +16,7 @@ If successful, the command returns a [channel object](/types/channel), including
 	    "channel": {
 			"id": "C024BE91L",
 			"name": "fun",
-			"created": "1360782804",
+			"created": 1360782804,
 			"creator": "U024BE7LH",
 			"is_archived": false,
 			"is_member": true,
@@ -28,12 +28,12 @@ If successful, the command returns a [channel object](/types/channel), including
 			"topic": {
 				"value": "Fun times",
 				"creator": "U024BE7LV",
-				"last_set": "1369677212"
+				"last_set": 1369677212
 			},
 			"purpose": {
 				"value": "This channel is for fun",
 				"creator": "U024BE7LH",
-				"last_set": "1360782804"
+				"last_set": 1360782804
 			}
 		},
 	}
@@ -49,7 +49,7 @@ the same as the channel `#general` that the user is already in:
 	    "channel": {
 	        "id": "C024BE91L",
 	        "name": "fun",
-	        "created": "1360782804",
+	        "created": 1360782804,
 	        "creator": "U024BE7LH",
 	        "is_archived": false,
 	        "is_general": false

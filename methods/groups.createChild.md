@@ -29,7 +29,7 @@ If successful, the command returns the new [group object](/types/group):
             "id": "G024BE91L",
             "name": "secretplans",
             "is_group": "true",
-            "created": "1360782804",
+            "created": 1360782804,
             "creator": "U024BE7LH",
             "is_archived": false,
             "members": [

@@ -17,7 +17,7 @@ Returns a [channel object](/types/channel):
 			"id": "C024BE91L",
 			"name": "fun",
 
-			"created": "1360782804",
+			"created": 1360782804,
 			"creator": "U024BE7LH",
 
 			"is_archived": false,

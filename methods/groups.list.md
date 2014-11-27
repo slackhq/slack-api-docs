@@ -18,7 +18,7 @@ Returns a list of [group objects](/types/group):
 	        {
 	            "id": "G024BE91L",
 	            "name": "secretplans",
-	            "created": "1360782804",
+	            "created": 1360782804,
 	            "creator": "U024BE7LH",
 	            "is_archived": false,
 	            "members": [
@@ -27,12 +27,12 @@ Returns a list of [group objects](/types/group):
 	            "topic": {
 	                "value": "Secret plans on hold",
 	                "creator": "U024BE7LV",
-	                "last_set": "1369677212"
+	                "last_set": 1369677212
 	            },
 	            "purpose": {
 	                "value": "Discuss secret plans that no-one else should know",
 	                "creator": "U024BE7LH",
-	                "last_set": "1360782804"
+	                "last_set": 1360782804
 	            }
 	        },
 	        ....

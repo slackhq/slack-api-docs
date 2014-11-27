@@ -6,7 +6,7 @@ A channel object contains information about a team channel.
 		"id": "C024BE91L",
 		"name": "fun",
 		"is_channel": "true",
-		"created": "1360782804",
+		"created": 1360782804,
 		"creator": "U024BE7LH",
 		"is_archived": false,
 		"is_general": false,
@@ -19,12 +19,12 @@ A channel object contains information about a team channel.
 		"topic": {
 			"value": "Fun times",
 			"creator": "U024BE7LV",
-			"last_set": "1369677212"
+			"last_set": 1369677212
 		},
 		"purpose": {
 			"value": "This channel is for fun",
 			"creator": "U024BE7LH",
-			"last_set": "1360782804"
+			"last_set": 1360782804
 		}
 
 		"is_member": true,

@@ -6,7 +6,7 @@ An IM object contains information about a direct message channel.
         "id": "D024BFF1M",
         "is_im": true,
         "user": "U024BE7LH",
-        "created": "1360782804",
+        "created": 1360782804,
         "is_user_deleted": false
     },
 

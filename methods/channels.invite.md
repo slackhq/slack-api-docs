@@ -12,7 +12,7 @@ This method is used to invite a user to a channel. The calling user must be a me
 	    "channel": {
 			"id": "C024BE91L",
 			"name": "fun",
-			"created": "1360782804",
+			"created": 1360782804,
 			"creator": "U024BE7LH",
 			"is_archived": false,
 			"is_member": true,
@@ -24,12 +24,12 @@ This method is used to invite a user to a channel. The calling user must be a me
 			"topic": {
 				"value": "Fun times",
 				"creator": "U024BE7LV",
-				"last_set": "1369677212"
+				"last_set": 1369677212
 			},
 			"purpose": {
 				"value": "This channel is for fun",
 				"creator": "U024BE7LH",
-				"last_set": "1360782804"
+				"last_set": 1360782804
 			}
 		},
 	}

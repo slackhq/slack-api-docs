@@ -16,7 +16,7 @@ If successful, the command returns a [group object](/types/group), including sta
             "id": "G024BE91L",
             "name": "secretplans",
             "is_group": "true",
-            "created": "1360782804",
+            "created": 1360782804,
             "creator": "U024BE7LH",
             "is_archived": false,
             "is_open": true,
@@ -29,12 +29,12 @@ If successful, the command returns a [group object](/types/group), including sta
             "topic": {
                 "value": "Secret plans on hold",
                 "creator": "U024BE7LV",
-                "last_set": "1369677212"
+                "last_set": 1369677212
             },
             "purpose": {
                 "value": "Discuss secret plans that no-one else should know",
                 "creator": "U024BE7LH",
-                "last_set": "1360782804"
+                "last_set": 1360782804
             }
         }
     }
