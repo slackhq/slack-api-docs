@@ -4,9 +4,13 @@ The Slack API and all integrations are subject to rate limiting.
 
 ## Message Posting
 
-In general we allow applications that integrate with Slack to send no more than one message per second.
+In general we allow applications that integrate with Slack to send no more than one message per second. We allow bursts over that limit for short periods. However, if your app continues to exceed the limit over a longer period of time it will be rate limited.
 
-We allow bursts over that limit for short periods. However, if your integration continues to exceed the limit over a longer period of time, Slack will start returning a `HTTP 429 Too Many Requests` error, a JSON object containing the number of calls you have been making, and a `Retry-After` header containing the number of seconds until you can retry. Continuing to send requests after being rate limited runs the risk of having your application permanently disabled.
+If you go over these limits when using our HTTP based APIs, including Incoming Webhooks, Slack will start returning a `HTTP 429 Too Many Requests` error, a JSON object containing the number of calls you have been making, and a `Retry-After` header containing the number of seconds until you can retry.
+
+If you go over these limits when using our [Real Time Messaging API](/rtm) you will recieve an error message as a reply. If you continue to send messages your application will be disconnected.
+
+Continuing to send messages after being rate limited runs the risk of having your application permanently disabled.
 
 These limits exist because Slack is primarily a communication tool for humans. Our goal is to detect applications that may be unintentionally spammy and quiet them down to avoid hindering a team’s ability to communicate and use their archive.
 
