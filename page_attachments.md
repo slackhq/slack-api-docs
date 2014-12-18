@@ -46,3 +46,7 @@ Here is an example attachment generated from an incoming webhook:
 Slack can also automatically create attachments based on the contents of URLs
 in the message. Our [unfurling documentation](/docs/unfurling/) gives more
 details on this functionality and how you can control it.
+
+## Message Formatting
+
+Slack messages may be formatted using a simple markup language similar to [Markdown](https://daringfireball.net/projects/markdown/). **[Learn how to format messages.](/docs/formatting)**

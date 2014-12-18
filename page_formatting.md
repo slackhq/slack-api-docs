@@ -126,6 +126,11 @@ devices). These Unicode code points will be converted into their colon-format eq
 The list of emoji supported are taken from [https://github.com/iamcal/emoji-data](https://github.com/iamcal/emoji-data)
 
 
+## Message Attachments
+
+You can create richly-formatted messages using Attachments. **[Learn how to add attachments to messages.](/docs/attachments)**
+
+
 ## Message Formatting
 
 Slack messages may be formatted using a simple markup language similar to [Markdown](https://daringfireball.net/projects/markdown/). Supported formatting includes: `` ```pre``` ``, `` `code` ``, `_italic_`, and `*bold*`; full details are available on our [help site](https://slack.zendesk.com/hc/en-us/articles/202288908-How-can-I-add-formatting-to-my-messages-).
