@@ -1,4 +1,4 @@
-# manual_presence_change event
+# manual\_presence\_change event
 
 	{
 		"type": "manual_presence_change",
