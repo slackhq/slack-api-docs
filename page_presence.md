@@ -25,7 +25,7 @@ These auto-away rules do not apply to [Bot Users](/bot-users).
 
 ## Manual Away
 
-An application can call [presence.set](/methods/presence.set)
+An application can call [users.setPresence](/methods/users.setPresence)
 to manually mark a user as `away` or `active`. A manual status set using this
 method will persist between connections.
 

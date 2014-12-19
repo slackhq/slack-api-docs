@@ -39,8 +39,8 @@ the bot user.
 Bot users do not follow the [usual rules for automatically being marked as
 away when inactive](/docs/presence). In most cases you want a bot to show as
 "active" and ready to respond, even if it hasn't posted a message in a while.
-If you'd like a bot to show up as "away" you can use [the presence.set API
-method](methods/presence.set).
+If you'd like a bot to show up as "away" you can use [the users.setPresence API
+method](methods/users.setPresence).
 
 Bot users can also only call a subset of our API methods. Any method that
 cannot be used by a bot user will return a `user_is_bot` error, which will be
