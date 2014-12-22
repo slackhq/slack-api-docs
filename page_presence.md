@@ -32,3 +32,14 @@ method will persist between connections.
 A manual `away` status set using this method overrides the automatic presence
 determined by the message server. A manual `active` presence set using this
 method indicates that the automatic status should be used instead.
+
+## Fetching user presence
+
+When using the [Real Time Messaging API](/rtm) the initial call to
+[rtm.start](/methods/rtm.start) will include the current presence value for every
+member of your team. If their presence value changes a
+[presence_change event](/events/presence_change) event will be sent.
+
+When using our [Web API](/web), you can call the
+[users.getPresence](/methods/users.getPresence) method to get the user's
+current presence value.
