@@ -21,6 +21,6 @@
 		"not_in_channel"	: "User was not in the channel.",
 		"cant_kick_from_general": "User cannot be removed from #general.",
 		"cant_kick_from_last_channel": "User cannot be removed from the last channel they're in.",
-		"restricted_action"	: "A team preference prevents authenticated user from kicking."
+		"restricted_action"	: "A team preference prevents the authenticated user from kicking."
 	}
 }
