@@ -4,6 +4,7 @@ A file object contains information about a file shared with a team.
 
 	{
 	    "id" : "F2147483862",
+	    "created" : 1356032811,
 	    "timestamp" : 1356032811,
 
 	    "name" : "file.htm",
@@ -49,6 +50,10 @@ A file object contains information about a file shared with a team.
 	}
 
 The `name` parameter may be `null` for unnamed files.
+
+The `created` property is a unix timestamp representing when the file was
+created. The `timestamp` property contains the same data as `created`, but is
+deprecated and is provided only for backwards compatibility with older clients.
 
 The `mimetype` and `filetype` props do not have a 1-to-1 mapping, as multiple different files types ('html', 'js',
 etc.) share the same mime type. The `pretty_type` property contains a human-readable version of the type.
