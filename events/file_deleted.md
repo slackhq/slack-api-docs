@@ -2,7 +2,8 @@
 
 	{
 		"type": "file_deleted",
-		"file": "F2147483862",
+		"file_id": "F2147483862",
+		"event_ts": "1361482916.000004",
 	}
 
 The `file_deleted` event is sent to all connected clients for a team when a
