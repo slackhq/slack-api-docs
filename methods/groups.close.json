@@ -5,7 +5,7 @@
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to open."
+			"desc"		: "Group to close."
 		}
 	},
 
