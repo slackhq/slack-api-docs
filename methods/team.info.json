@@ -1,0 +1,9 @@
+{
+	"desc": "Gets information about the team.",
+
+	"args": {
+	},
+
+	"errors": {
+	}
+}
