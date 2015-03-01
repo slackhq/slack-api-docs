@@ -9,7 +9,7 @@ interact with them using direct messages.
 
 Like our other APIs and integrations bot users are free. Unlike regular users
 the actions they can perform are limited slightly. For teams on a lite plan
-each bot user counts as a seperate integration.
+each bot user counts as a separate integration.
 
 ## Getting started
 
