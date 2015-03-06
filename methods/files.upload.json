@@ -35,7 +35,7 @@
 		"channels": {
 			"type"		: "channel",
 			"required"	: false,
-			"desc"		: "Comma separated list of channels to share the file into."
+			"desc"		: "Comma separated list of identifiers of channels, ims or groups to share the file into."
 		}
 	},
 
