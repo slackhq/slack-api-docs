@@ -25,12 +25,12 @@ A channel object contains information about a team channel.
 			"value": "This channel is for fun",
 			"creator": "U024BE7LH",
 			"last_set": 1360782804
-		}
+		},
 
 		"is_member": true,
 
 		"last_read": "1401383885.000061",
-		"latest": { … }
+		"latest": { … },
 		"unread_count": 0,
 		"unread_count_display": 0
 	}

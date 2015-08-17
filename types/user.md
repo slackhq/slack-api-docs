@@ -14,11 +14,11 @@ A user object contains information about a team member.
 			"email": "bobby@slack.com",
 			"skype": "my-skype-name",
 			"phone": "+1 (123) 456 7890",
-			"image_24": "https:\/\/...",
-			"image_32": "https:\/\/...",
-			"image_48": "https:\/\/...",
-			"image_72": "https:\/\/...",
-			"image_192": "https:\/\/..."
+			"image_24": "https:\/\/…",
+			"image_32": "https:\/\/…",
+			"image_48": "https:\/\/…",
+			"image_72": "https:\/\/…",
+			"image_192": "https:\/\/…"
 		},
 		"is_admin": true,
 		"is_owner": true,
