@@ -2,7 +2,7 @@
 
 	{
 		"type": "file_private",
-		"file": "F2147483862",
+		"file": "F2147483862"
 	}
 
 The `file_private` event is sent to all connected clients for a team when a

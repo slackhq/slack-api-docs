@@ -13,4 +13,4 @@ group - this means that when a group is left from client A, it will
 automatically be closed in client B.
 
 In addition to this message, all existing members of the group will recieve a
-[`group_leave` message event](/events/messages/group_leave).
+[`group_leave` message event](/events/message/group_leave).

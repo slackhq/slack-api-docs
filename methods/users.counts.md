@@ -21,6 +21,7 @@ show a summary of unread messages without fetching history for all channels.
 	            "id": "C024BFDJ1",
 	            "name": "bieber_tweets",
 	            "unread_count": 0,
+	            "unread_count_display": 0,
 	            "mention_count": 0
 	        },
 	        ...
@@ -30,6 +31,7 @@ show a summary of unread messages without fetching history for all channels.
 	            "id": "G024G5PN0",
 	            "name": "secrets",
 	            "unread_count": 0,
+	            "unread_count_display": 0,
 	            "mention_count": 0
 	        },
 	        ...

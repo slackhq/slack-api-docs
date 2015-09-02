@@ -12,14 +12,20 @@
 			"type"		: "timestamp",
 			"required"	: false,
 			"default"	: "now",
-			"desc"		: "Latest message timestamp to include in results."
+			"desc"		: "End of time range of messages to include in results."
 		},
 
 		"oldest": {
 			"type"		: "timestamp",
 			"required"	: false,
 			"default"	: "0",
-			"desc"		: "Oldest message timestamp to include in results."
+			"desc"		: "Start of time range of messages to include in results."
+		},
+
+		"inclusive": {
+			"example"	: 1,
+			"default"	: 0,
+			"desc"		: "Include messages with latest or oldest timestamp in results."
 		},
 
 		"count": {

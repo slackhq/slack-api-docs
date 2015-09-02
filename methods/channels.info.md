@@ -27,11 +27,12 @@ Returns a [channel object](/types/channel):
 			"members": [ … ],
 
 			"topic": { … },
-			"purpose": { … }
+			"purpose": { … },
 
 			"last_read": "1401383885.000061",
-			"latest": { … }
+			"latest": { … },
 			"unread_count": 0,
+			"unread_count_display": 0
 		}
 	}
 

@@ -11,7 +11,7 @@ is also returned.
 
 ## Response
 
-Returns a list of [channel objects](/types/channel):
+Returns a list of limited [channel objects](/types/channel):
 
 	{
 	    "ok": true,
@@ -38,6 +38,8 @@ Returns a list of [channel objects](/types/channel):
 	        ....
 	    ]
 	}
+
+To get a full [channel object](/types/channel), call the [channels.info](/methods/channels.info) method.
 
 
 ## Errors

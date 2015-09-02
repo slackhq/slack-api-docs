@@ -14,7 +14,7 @@ The response includes any supplied arguments:
 	{
 		"ok": true,
 		"args": {
-			"foo": "bar",
+			"foo": "bar"
 		}
 	}
 
@@ -24,7 +24,7 @@ If called with an `error` argument an error response is returned:
 		"ok": false,
 		"error": "my_error",
 		"args": {
-			"error": "my_error",
+			"error": "my_error"
 		}
 	}
 

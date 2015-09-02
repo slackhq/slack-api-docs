@@ -78,7 +78,7 @@ A message was removed
 		"hidden": true,
 		"channel": "C2147483705",
 		"ts": "1358878755.000001"
-		"deleted_ts": "1358878749.000002",
+		"deleted_ts": "1358878749.000002"
 	}
 
 

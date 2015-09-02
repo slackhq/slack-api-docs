@@ -23,10 +23,11 @@ If successful, the command returns a [channel object](/types/channel), including
 			"last_read": "0000000000.000000",
 			"latest": null,
 			"unread_count": 0,
+			"unread_count_display": 0,
 			"members": [ … ],
 			"topic": { … },
 			"purpose": { … }
-		},
+		}
 	}
 
 

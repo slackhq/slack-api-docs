@@ -51,15 +51,26 @@ as follows:
 In the first case, the URL is detected as-is. In the second, the full URL is included first, then a pipe 
 character (`|`), then finally the originally typed version of the URL.
 
-There is a further special token format which is used to denote various things:
+The server will also detect mailto links in the format `<email|user>`.  For example:
 
-    <!foo>
+    <mailto:bob@example.com|Bob>
 
-Where `foo` is a special command. Currently defined commands are `!channel`, `!group` and `!everyone`
-(group is just a synonym for channel - both can be used in channels and groups).
-Commands that are not recognised can be output as-is, without the enclosing brackets.
+Some messages contain special words with extra behavior. For these we use the
+format `<!foo>`, where `foo` is a special command. Currently defined commands
+are `!channel`, `!group` and `!everyone` (group is just a synonym for channel
+- both can be used in channels and groups). These indicate an @channel, @group
+or @everyone message, and should cause a notification to be displayed by the
+client.
 
-To display messages in a web-client, the client should take the following steps:
+More commands will be added in the future. Commands that are not recognised
+can be output as-is, with the enclosing brackets to indicate something about
+the text is special. If a label is present it should be used. For example:
+
+ * `<!foo>` should be displayed as `<foo>`
+ * `<!foo|label>` should be displayed as `<label>`
+
+To display messages in a web-client, the client should take the following
+steps:
 
 1.  Detect all sequences matching `<(.*?)>`
 2.  Within those sequences, format content starting with `#C` as a channel link
@@ -98,7 +109,7 @@ If you don't want Slack to perform _any_ processing on your message, pass an arg
     IN  : Foo <!everyone> bar http://test.com
     OUT : Foo <!everyone> bar http://test.com
 
-(In this case, Slack will still test the validity of your markup - we wont send invalid messages to clients).
+(In this case, Slack will still test the validity of your markup - we won't send invalid messages to clients).
 
 If you want Slack to treat your message as completely unformatted, pass `parse=full`. This will ignore 
 any markup formatting you added to your message.
@@ -109,6 +120,18 @@ any markup formatting you added to your message.
 In full parse mode, we will find and linkify URLs, channel names (starting with a '#') and usernames (starting 
 with an '@').
 
+
+## Multiline Messages
+
+You can post multiline messages through Slack's APIs. Insert a newline by including the characters `\n` in your text. For example:
+
+    {
+        "text": "This is a line of text.\nAnd this is another one."
+    }
+
+The above JSON payload will be displayed in the channel as:
+
+![Screenshot of a webhook with a newline](/img/api/incoming_simple.png)
 
 ## Emoji
 
@@ -152,13 +175,13 @@ By default bot message text will be formatted, but [attachments](/docs/attachmen
     {
         "attachments": [
             {
-                "title": "*Title*"
-                "fallback": "Title: testing *right now!*",
+                "title": "Title",
+                "pretext": "Pretext _supports_ mrkdwn",
                 "text": "Testing *right now!*",
 
-                "mrkdwn_in": ["text", "title", "fallback"]
+                "mrkdwn_in": ["text", "pretext"]
             }
         ]
     }
 
-Valid values for `mrkdwn_in` are: `["pretext", "text", "title", "fields", "fallback"]`
+Valid values for `mrkdwn_in` are: `["pretext", "text", "fields"]`. Setting `"fields"` will enable markup formatting for the `value` of each field.

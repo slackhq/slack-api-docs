@@ -1,4 +1,4 @@
-# star_added event type
+# reaction_added event type
 
 	{
 		"type": "reaction_added",
@@ -11,7 +11,7 @@
 	}
 
 When a reaction is added to an item the `reaction_added` event is sent to all connected
-clients for users who can see the content that was reacted ti.
+clients for users who can see the content that was reacted to.
 
 See [the `reactions.list` method](/methods/reactions.list) for details of the
 structure of the `item` property.

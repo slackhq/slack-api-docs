@@ -32,6 +32,7 @@ A channel object contains information about a team channel.
 		"last_read": "1401383885.000061",
 		"latest": { … }
 		"unread_count": 0,
+		"unread_count_display": 0
 	}
 
 The `name` parameter indicates the name of the channel, without a leading hash
@@ -57,5 +58,7 @@ disabled.
 Some API methods (such as [channels.join](/methods/channels.join)) will
 include extra state information for channels when the calling user is a
 member. `last_read` is the timestamp for the last message the calling user has
-read in this channel. `unread_count` is a count of messages that the calling
-user has yet to read. `latest` is the latest message in the channel.
+read in this channel. `unread_count` is a full count of visible messages that the 
+calling user has yet to read. `unread_count_display` is a count of messages that
+the calling user has yet to read that matter to them (this means it excludes things
+like join/leave messages). `latest` is the latest message in the channel.

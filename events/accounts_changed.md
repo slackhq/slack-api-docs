@@ -1,7 +1,7 @@
 # accounts_changed event type
 
 	{
-		"type": "accounts_changed",
+		"type": "accounts_changed"
 	}
 
 The `accounts_changed` event is used by our web client to maintain a list of

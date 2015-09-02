@@ -12,5 +12,5 @@ direct message channel is created that they are a member of.
 This message lets the client know that a channel has been created, but the
 client should show no changes based on this, just update its internal list of
 IM channels. Usually this event is followed by an
-[`im_opened` event](/events/im_opened).
+[`im_open` event](/events/im_open).
 

@@ -57,6 +57,8 @@ The response JSON will contain an access token:
 
 You can then use this token to call protected API methods on behalf of the user.
 
+Please note that these access tokens do not expire.
+
 
 ### Step 2a - Denied Requests
 
@@ -90,6 +92,8 @@ The following scopes are available for Slack applications:
 * __identify__ : Allows applications to confirm your identity.
 * __read__ : Allows applications to read any messages and state that the user can see.
 * __post__ : Allows applications to write messages and create content on behalf of the user.
+* __client__: Allows applications to connect to slack as a client, and post messages on behalf of the user.
+* __admin__: Allows applications to perform administrative actions, requires the authed user is an admin.
 
 NOTE: Your application can request the scopes in the initial redirection.
 You can specify multiple scopes by separating them with a comma:
@@ -98,15 +102,17 @@ You can specify multiple scopes by separating them with a comma:
       client_id=...&
       scope=read,post
 
+Please note that the `post` scope also inherits the `read` scope, and the `client` scope inherits both the `post` and `read` scopes.
+
 
 ## Redirect URIs
 
-The `redirect_uri` parameter is optional. If left out, Slack will redirect users to the callback URL 
-configured in the OAuth Application settings. If provided, the redirect URL's host and port must exactly 
+The `redirect_uri` parameter is optional. If left out, Slack will redirect users to the callback URL
+configured in the OAuth Application settings. If provided, the redirect URL's host and port must exactly
 match the callback URL. The redirect URL's path must reference a subdirectory of the callback URL.
 
     CALLBACK: http://example.com/path
-    
+
     GOOD: https://example.com/path
     GOOD: http://example.com/path/subdir/other
     BAD:  http://example.com/bar

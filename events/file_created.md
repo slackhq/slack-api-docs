@@ -2,7 +2,7 @@
 
 	{
 		"type": "file_created",
-		"file": { … },
+		"file": { … }
 	}
 
 The `file_created` event is sent to all connected clients for a user when that

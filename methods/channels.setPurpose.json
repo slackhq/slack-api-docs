@@ -18,6 +18,7 @@
 		"channel_not_found"	: "Value passed for `channel` was invalid.",
 		"not_in_channel": "Authenticated user is not in the channel.",
 		"is_archived"	: "Channel has been archived.",
-		"too_long": "Purpose was longer than 250 characters."
+		"too_long": "Purpose was longer than 250 characters.",
+		"user_is_restricted" : "Setting the purpose is a restricted action."
 	}
 }

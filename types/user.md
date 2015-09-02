@@ -25,6 +25,8 @@ A user object contains information about a team member.
 		"is_primary_owner": true,
 		"is_restricted": false,
 		"is_ultra_restricted": false,
+		"has_2fa": false,
+		"two_factor_type": 'sms',
 		"has_files": true
 	},
 
@@ -42,3 +44,10 @@ the empty string (`""`).
 
 The `image_*` fields will always contain `https` URLs to square, web-viewable
 images (GIFs, JPEGs or PNGs).
+
+The `has_2fa` field describes whether two-step verification is enabled for this
+user. This field will always be displayed if you are looking at your own user
+information. If you are looking at another user's information this field will only
+be displayed if you are team admin or owner.
+
+The `two_factor_type` field is either `app` or `sms`. It will only be present if `has_2fa` is true.

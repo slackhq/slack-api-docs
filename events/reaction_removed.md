@@ -1,4 +1,4 @@
-# star_removed event type
+# reaction_removed event type
 
 	{
 		"type": "reaction_removed",

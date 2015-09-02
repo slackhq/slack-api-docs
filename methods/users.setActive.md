@@ -11,7 +11,7 @@ more details.
 ## Response
 
 	{
-	    "ok": true,
+	    "ok": true
 	}
 
 

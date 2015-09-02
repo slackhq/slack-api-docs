@@ -6,7 +6,7 @@
 			"id":"C02ELGNBH",
 			"name":"new_name",
 			"created":1360782804
-		},
+		}
 	}
 
 The `channel_renamed` event is sent to all connections for a team when a team

@@ -22,8 +22,9 @@ If successful, the command returns a [channel object](/types/channel), including
 			"is_member": true,
 			"is_general": false,
 			"last_read": "1401383885.000061",
-			"latest": { … }
+			"latest": { … },
 			"unread_count": 0,
+			"unread_count_display": 0,
 			"members": [ … ],
 			"topic": {
 				"value": "Fun times",
@@ -35,7 +36,7 @@ If successful, the command returns a [channel object](/types/channel), including
 				"creator": "U024BE7LH",
 				"last_set": 1360782804
 			}
-		},
+		}
 	}
 
 If you are already in the channel, the response is slightly different.

@@ -40,5 +40,6 @@
 	},
 
 	"errors": {
+		"posting_to_general_channel_denied"	: "An admin has restricted posting to the #general channel."
 	}
 }

@@ -42,12 +42,12 @@ there were more than 100 messages between those two points, then `has_more`
 will be true.
 
 If a message has the same timestamp as `latest` or `oldest` it will not be
-included in the list. This allows a client to fetch all messages in a hole in
-channel history, by calling groups.history with `latest` set to the oldest
-message they have after the hole, and `oldest` to the latest message they have
-before the hole. If the response includes `has_more` then the client can make
-another call, using the `ts` value of the final messages as the `latest` param
-to get the next page of messages.
+included in the list, unless `inclusive` is true. This allows a client to
+fetch all messages in a hole in channel history, by calling channels.history
+with `latest` set to the oldest message they have after the hole, and `oldest`
+to the latest message they have before the hole. If the response includes
+`has_more` then the client can make another call, using the `ts` value of the
+final messages as the `latest` param to get the next page of messages.
 
 If there are more than 100 messages between the two timestamps then the
 messages returned are the ones closest to `latest`. In most cases an
@@ -55,9 +55,6 @@ application will want the most recent messages and will page backward from
 there. If `oldest` is provided but not `latest` then the messages returned are
 those closest to `oldest`, allowing you to page forward through history if
 desired.
-
-If the `latest` or `oldest` arguments are provided then those timestamps will
-also be included in the output.
 
 Messages of type `"message"` are user-entered text messages sent to the group, while other types
 are events that happened within the group. All messages have both a `type` and a sortable

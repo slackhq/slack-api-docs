@@ -6,7 +6,7 @@
 			"id":"G02ELGNBH",
 			"name":"new_name",
 			"created":1360782804
-		},
+		}
 	}
 
 The `group_rename` event is sent to all connections for members of a private

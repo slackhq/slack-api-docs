@@ -2,7 +2,7 @@
 
 	{
 		"type": "file_public",
-		"file": { … },
+		"file": { … }
 	}
 
 The `file_public` event is sent when a file is made public. It is sent to all

@@ -19,8 +19,8 @@ property:
 
 	{
 		"ok": true,
-		"no_op": true
-		"already_closed": true,
+		"no_op": true,
+		"already_closed": true
 	}
 
 

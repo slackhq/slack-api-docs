@@ -5,7 +5,7 @@
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Channel to send message to. Can be a public channel, private group or IM channel. Can be an encoded ID, or a name."
+			"desc"		: "Channel, private group, or IM channel to send message to. Can be an encoded ID, or a name. See below for more details."
 		},
 		"text": {
 			"required"	: true,
@@ -16,6 +16,11 @@
 			"required"	: false,
 			"example"	: "My Bot",
 			"desc"		: "Name of bot."
+		},
+		"as_user": {
+			"required"	: false,
+			"example"	: "true",
+			"desc"		: "Pass true to post the message as the authed user, instead of as a bot"
 		},
 		"parse": {
 			"example"	: "full",
@@ -52,6 +57,7 @@
 	"errors": {
 
 		"channel_not_found"	: "Value passed for `channel` was invalid.",
+		"not_in_channel"	: "Cannot post user messages to a channel they are not in.",
 		"is_archived"		: "Channel has been archived.",
 		"msg_too_long"		: "Message text is too long",
 		"no_text"		: "No message text provided",

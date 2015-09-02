@@ -5,8 +5,8 @@
 		"subtype": "message_deleted",
 		"hidden": true,
 		"channel": "C2147483705",
-		"ts": "1358878755.000001"
-		"deleted_ts": "1358878749.000002",
+		"ts": "1358878755.000001",
+		"deleted_ts": "1358878749.000002"
 	}
 
 A `message_deleted` message is sent when a message in a channel is deleted,

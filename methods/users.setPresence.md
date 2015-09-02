@@ -9,7 +9,7 @@ This method lets you set the calling user's manual presence.
 ## Response
 
 	{
-	    "ok": true,
+	    "ok": true
 	}
 
 

@@ -18,8 +18,9 @@ This method is used to invite a user to a channel. The calling user must be a me
 			"is_member": true,
 			"is_general": false,
 			"last_read": "1401383885.000061",
-			"latest": { … }
+			"latest": { … },
 			"unread_count": 0,
+			"unread_count_display": 0,
 			"members": [ … ],
 			"topic": {
 				"value": "Fun times",
@@ -31,7 +32,7 @@ This method is used to invite a user to a channel. The calling user must be a me
 				"creator": "U024BE7LH",
 				"last_set": 1360782804
 			}
-		},
+		}
 	}
 
 ## Errors

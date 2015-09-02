@@ -1,0 +1,13 @@
+{
+    "desc": "Gets the access logs for the current team.",
+
+    "args": {
+    },
+
+    "has_paging"    : true,
+    "default_count" : 100,
+
+    "errors": {
+        "paid_only": "This is only available to paid teams."
+    }
+}

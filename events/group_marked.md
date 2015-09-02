@@ -8,4 +8,4 @@
 
 The `group_marked` event is sent to all open connections for a user when
 that user moves the read cursor in a private group by calling the
-[group.mark API method](/methods/group.mark).
+[groups.mark API method](/methods/groups.mark).

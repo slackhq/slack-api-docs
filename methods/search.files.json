@@ -5,7 +5,7 @@
 		"query": {
 			"required"	: true,
 			"example"	: "pickleface",
-			"desc"		: "Search query. May contains booleans, etc."
+			"desc"		: "Search query. May contain booleans, etc."
 		},
 		"sort": {
 			"required"	: false,

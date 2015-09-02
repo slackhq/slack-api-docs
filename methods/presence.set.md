@@ -10,7 +10,7 @@ This method has been deprecated in favor of [the users.setPresence method](/meth
 ## Response
 
 	{
-	    "ok": true,
+	    "ok": true
 	}
 
 

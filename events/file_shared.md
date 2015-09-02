@@ -2,7 +2,7 @@
 
 	{
 		"type": "file_shared",
-		"file": { … },
+		"file": { … }
 	}
 
 The `file_shared` event is sent when a file is shared. It is sent to all

@@ -2,7 +2,7 @@
 
 	{
 		"type": "file_change",
-		"file": { … },
+		"file": { … }
 	}
 
 The `file_change` event is sent when any property of a file is changed. It is

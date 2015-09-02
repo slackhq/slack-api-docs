@@ -35,6 +35,7 @@ Returns a list of [user objects](/types/user), in no particular order:
 	            },
 	            "is_admin": true,
 	            "is_owner": true,
+	            "has_2fa": false,
 	            "has_files": true
 	        },
 	        ...

@@ -8,7 +8,7 @@ This method starts a Real Time Messaging API session. Refer to the
 
 ## Response
 
-Thie method returns lots of data about the current state of a team, along
+This method returns lots of data about the current state of a team, along
 with a WebSocket Message Server URL:
 
     {
@@ -34,6 +34,7 @@ with a WebSocket Message Server URL:
             "prefs": {
                 …
             },
+            "plan": "std"
         },
         "users": [ … ],
 
@@ -56,12 +57,17 @@ member of the team.
 
 The `channels` property is a list of [channel objects](/types/channel), one
 for every channel visible to the authenticated user. For regular or
-administrator accounts this list will include every team channel. The `groups`
-property is a list of [group objects](/types/group), one for every group the
-authenticated user is in. The `ims` property is a list of
+administrator accounts this list will include every team channel. The
+`is_member` property indicates if the user is a member of this channel. If
+true then the channel object will also include the topic, purpose, member
+list and read-state related information.
+
+The `groups` property is a list of [group objects](/types/group), one for
+every group the authenticated user is in.
+
+The `ims` property is a list of
 [IM objects](/types/im), one for every direct message channel visible to the
-authenticated user. The object for every group, channel or IM that the user is
-in will contain state information about that channel.
+authenticated user.
 
 The `bots` property gives details of the integrations set up on this team.
 

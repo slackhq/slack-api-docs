@@ -12,7 +12,7 @@ This method lists the custom emoji for a team.
 		"ok": true,
 		"emoji": {
 			"bowtie": "https:\/\/my.slack.com\/emoji\/bowtie\/46ec6f2bb0.png",
-			"squirrel": "https:\/\/my.slack.com\/emoji\/squirrel\/f35f40c0e0.png"
+			"squirrel": "https:\/\/my.slack.com\/emoji\/squirrel\/f35f40c0e0.png",
 			"shipit": "alias:squirrel",
 			…
 		}

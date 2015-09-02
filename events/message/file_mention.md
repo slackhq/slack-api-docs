@@ -6,7 +6,7 @@
 		"ts": "1358877455.000010",
 		"text": "<@cal> mentioned a file: <https:...7.png|7.png>",
 		"file": {...},
-		"user": "U2147483697",
+		"user": "U2147483697"
 	}
 
 

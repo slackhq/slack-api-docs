@@ -8,8 +8,8 @@ which channels your bot is in. You can even invite bots to private groups or
 interact with them using direct messages.
 
 Like our other APIs and integrations bot users are free. Unlike regular users
-the actions they can perform are limited slightly. For teams on a lite plan
-each bot user counts as a seperate integration.
+the actions they can perform are limited slightly. For teams on the Free Plan
+each bot user counts as a separate integration.
 
 ## Getting started
 
@@ -47,7 +47,7 @@ cannot be used by a bot user will return a `user_is_bot` error, which will be
 documented as an error in the method documentation. The full list of methods
 that can be used by bot users is:
 
-{METHOD_LIST}
+{BOT_METHOD_LIST}
 
 You can tell if a [user object](/types/user) returned by our API is a bot by
 checking the `is_bot` property.

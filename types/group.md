@@ -21,7 +21,12 @@ A group object contains information about a private group.
             "value": "Discuss secret plans that no-one else should know",
             "creator": "U024BE7LH",
             "last_set": 1360782804
-        }
+        },
+
+        "last_read": "1401383885.000061",
+        "latest": { … }
+        "unread_count": 0,
+        "unread_count_display": 0
 
     },
 
@@ -39,7 +44,9 @@ disabled.
 `topic` and `purpose` provide information about the group topic and purpose.
 
 Some API methods (such as [groups.create](/methods/groups.create)) will
-include extra state information for the group. `is_open` shows if the group is
-open. `last_read` is the timestamp for the last message the calling user has
-read in this group. `unread_count` is a count of messages that the calling
-user has yet to read. `latest` is the latest message in the group.
+include extra state information for channels when the calling user is a
+member. `last_read` is the timestamp for the last message the calling user has
+read in this channel. `unread_count` is a full count of visible messages that the 
+calling user has yet to read. `unread_count_display` is a count of messages that
+the calling user has yet to read that matter to them (this means it excludes things
+like join/leave messages). `latest` is the latest message in the channel.

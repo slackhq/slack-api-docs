@@ -17,7 +17,7 @@ maintain a synchronized local copy of all team data and messages.
 
 The Websocket URLs provided by `rtm.start` are single-use and are only valid
 for 30 seconds, so make sure to connect quickly. If you connect successfully
-the first event recieved will be a hello:
+the first event received will be a hello:
 
 	{
 		"type": "hello"
@@ -27,7 +27,7 @@ This will be followed by any events that occured between the call to
 `rtm.start` and the connection to the message server. If you're reconnecting
 after a network problem this initial set of events may include a response
 to the last message sent on a previous connection (with a `reply_to`) so a
-client can confirm that message was recieved.
+client can confirm that message was received.
 
 If there was a problem connecting an error will be returned, including a
 descriptive error message:
@@ -35,7 +35,7 @@ descriptive error message:
 	{
 		"type": "error",
 		"error": {
-			"code: 1,
+			"code": 1,
 			"msg": "Socket URL has expired"
 		}
 	}
@@ -52,10 +52,13 @@ all connected clients. The simplest event is a message sent from a user:
 		"text": "Hello"
 	}
 
-Every event has a `type` property which describes the type of event. The full
-list of event types is:
+Every event has a `type` property which describes the type of event. Our
+servers currently send the following event types:
 
 {EVENT_TYPES}
+
+New event types will be added in the future, clients should be able to handle
+unexpected event types.
 
 ## Sending messages
 
@@ -80,7 +83,14 @@ So to post the text "Hello world" to a channel, you can send this JSON:
 	}
 
 You can send a message to a private group or direct message channel in the
-same way, but using a Group ID (`C024BE91L`) or DM channel ID ("D024BE91L").
+same way, but using a Group ID (`C024BE91L`) or DM channel ID (`D024BE91L`).
+
+The RTM API only supports posting simple messages formatted using our
+[default message formatting mode](/docs/formatting). It does not support
+[attachments](/docs/attachments) or other message formatting modes. To post a
+more complex message as a user clients can call the
+[chat.postMessage Web API method](/methods/chat.postMessage) with `as_user`
+set to true.
 
 Once the JSON has been sent to the server visual clients should immediately
 display the text in the channel, grayed out or otherwise marked to indicate
@@ -129,7 +139,7 @@ writing a message to send to a channel:
 	{
 		"id": 1,
 		"type": "typing",
-		"channel": "C024BE91L",
+		"channel": "C024BE91L"
 	}
 
 This can be sent on every key press in the chat input unless one has been
@@ -183,5 +193,5 @@ create a snippet or create a post.
 
 As with all Slack APIs, the RTM API is subject to
 [rate limits](/docs/rate-limits). Clients should not
-send more than one message per second sustained. If you do you may recieve an
+send more than one message per second sustained. If you do you may receive an
 error message or be disconnected.

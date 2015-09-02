@@ -1,4 +1,4 @@
-## Unfurling
+# Unfurling
 
 Slack can automatically find URLs in a message and create attachments based on
 the content of those URLs. We call this functionality “unfurling”.

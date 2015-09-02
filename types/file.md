@@ -30,8 +30,8 @@ A file object contains information about a file shared with a team.
 	    "thumb_80": "https:\/\/slack-files.com\/files-tmb\/T024BE7LD-F024BERPE-c66246\/1_80.png",
 	    "thumb_360": "https:\/\/slack-files.com\/files-tmb\/T024BE7LD-F024BERPE-c66246\/1_360.png",
 	    "thumb_360_gif": "https:\/\/slack-files.com\/files-tmb\/T024BE7LD-F024BERPE-c66246\/1_360.gif",
-	    "thumb_360_w": "100",
-	    "thumb_360_h": "100",
+	    "thumb_360_w": 100,
+	    "thumb_360_h": 100,
 
 	    "permalink" : "https:\/\/tinyspeck.slack.com\/files\/cal\/F024BERPE\/1.png",
 	    "edit_link" : "https:\/\/tinyspeck.slack.com\/files\/cal\/F024BERPE\/1.png/edit",
@@ -44,9 +44,23 @@ A file object contains information about a file shared with a team.
 	    "public_url_shared": false,
 	    "channels": ["C024BE7LT", ...],
 	    "groups": ["G12345", ...],
+	    "ims": ["D12345", ...],
 	    "initial_comment": {...},
 	    "num_stars": 7,
-	    "is_starred": true
+	    "is_starred": true,
+	    "pinned_to": ["C024BE7LT", ...],
+	    "reactions": [
+		{
+			"name": "astonished",
+			"count": 3,
+			"users": [ "U1", "U2", "U3" ]
+		},
+		{
+			"name": "facepalm",
+			"count": 1034,
+			"users": [ "U1", "U2", "U3", "U4", "U5" ]
+		}
+	    ]
 	}
 
 The `name` parameter may be `null` for unnamed files.
@@ -87,10 +101,9 @@ For snippets, we include a simple `preview` of the contents (a few truncated lin
 more complex syntaxed highlighted preview (`preview_highlight`) in HTML. The total count of lines in the snippet
 if returned in `lines`, while `lines_more` contains a count of lines not shown in the preview.
 
-If a file is public, the `is_public` flag will be set. See the "Private Files" section below for more details.
+If a file is public, the `is_public` flag will be set.
 
-If a file's public URL has been shared, the `public_url_shared` flag will be set. See the "Public URLs" section
-below for more details.
+If a file's public URL has been shared, the `public_url_shared` flag will be set.
 
 The `channels` array contains the IDs of any channels into which the file is currently shared. The `groups` array
 is the same but for private groups. Groups are only returned if the caller is a member of that group. Finally, the
@@ -99,6 +112,15 @@ is the same but for private groups. Groups are only returned if the caller is a 
 The `num_stars` property contains the number of users who have starred this file. It is not present if no users
 have starred it. The `is_starred` property is present and true if the calling user has starred the file, else
 it is omitted.
+
+The `pinned_to` array contains the IDs of any channels to which the file is currently pinned.
+
+The `reactions` property contains any reactions that have been added to the file and gives information about the
+type of reaction, the total number of users who added that reaction and a (possibly incomplete) list of users who have
+added that reaction to the file. The users array in the `reactions` property might not always contain all users
+that have reacted (we limit it to X users, and X might change), however `count` will always represent the count of all
+users who made that reaction (i.e. it may be greater than `users.length`). If the authenticated user has a given reaction
+then they are guaranteed to appear in the `users` array, regardless of whether `count` is greater than `users.length` or not.
 
 The `initial_comment` will be a comment from the file uploader, and will only be set when the uploader commented on the file at the
 time of upload. Clients can use this to display the comment with the file when announcing new file uploads.

@@ -2,7 +2,7 @@
 
 	{
 		"type": "file_unshared",
-		"file": { … },
+		"file": { … }
 	}
 
 The `file_unshared` event is sent when a file is unshared. It is sent to all

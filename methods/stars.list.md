@@ -16,16 +16,16 @@ information.
 			{
 				"type": "message",
 				"channel": "C2147483705",
-				"message": {...},
+				"message": {...}
 			},
 			{
 				"type": "file",
-				"file": { ... },
+				"file": { ... }
 			}
 			{
 				"type": "file_comment",
 				"file": { ... },
-				"comment": { ... },
+				"comment": { ... }
 			}
 			{
 				"type": "channel",

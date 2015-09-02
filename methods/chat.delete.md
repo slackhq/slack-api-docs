@@ -11,7 +11,7 @@ This method deletes a message from a channel.
 	{
 		"ok": true,
 		"channel": "C024BE91L",
-		"ts": "1401383885.000061",
+		"ts": "1401383885.000061"
 	}
 
 The response includes the `channel` and `timestamp` properties of the deleted

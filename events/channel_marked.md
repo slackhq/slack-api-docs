@@ -8,4 +8,4 @@
 
 The `channel_marked` event is sent to all open connections for a user when
 that user moves the read cursor in a channel by calling the
-[channel.mark API method](/methods/channel.mark).
+[channels.mark API method](/methods/channels.mark).
