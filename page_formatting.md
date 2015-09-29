@@ -57,10 +57,13 @@ The server will also detect mailto links in the format `<email|user>`.  For exam
 
 Some messages contain special words with extra behavior. For these we use the
 format `<!foo>`, where `foo` is a special command. Currently defined commands
-are `!channel`, `!group` and `!everyone` (group is just a synonym for channel
-- both can be used in channels and groups). These indicate an @channel, @group
+are `!channel`, `!group`, `!here`, and `!everyone` (group is just a synonym for channel
+- both can be used in channels and groups). These indicate an @channel, @group, @here,
 or @everyone message, and should cause a notification to be displayed by the
 client.
+
+Note that to display @here on older mobile clients you will need to specify a label
+with the `<!here>` command (eg. `<!here|here>`).
 
 More commands will be added in the future. Commands that are not recognised
 can be output as-is, with the enclosing brackets to indicate something about

@@ -16,6 +16,19 @@
 			"required"	: true,
 			"example"	: "Hello world",
 			"desc"		: "New text for the message, using the [default formatting rules](/docs/formatting)."
+		},
+		"attachments": {
+			"example"	: "[{\"pretext\": \"pre-hello\", \"text\": \"text-world\"}]",
+			"desc"		: "Structured message attachments."
+		},
+		"parse": {
+			"required"	: false,
+			"example"	: "none",
+			"desc"		: "Change how messages are treated. See below."
+		},
+		"link_names": {
+			"example"	: "1",
+			"desc"		: "Find and link channel names and usernames."
 		}
 	},
 
