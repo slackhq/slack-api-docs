@@ -40,7 +40,7 @@ This will be displayed in the channel as:
 
 You can override an incoming webhook's configured name with the `username` parameter in your JSON payload.
 
-You can also override the bot icon either with `icon_url` or `icon_emoji"`.
+You can also override the bot icon either with `icon_url` or `icon_emoji`.
 
 	{
 	    "username": "new-bot-name",
