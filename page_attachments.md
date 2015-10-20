@@ -122,8 +122,6 @@ Using a combination of the provided message attachment parameters, you can creat
 
 ![Screenshot of a groove message](/img/api/attachment_example_groove.png)
 
-<img src="/img/api/attachment_example_groove.png" style="border-radius: 0.5rem; border: 1px solid #DDD;">
-
     {
         "attachments": [
             {
