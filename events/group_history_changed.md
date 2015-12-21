@@ -8,6 +8,6 @@
 	}
 
 A `group_history_changed` event is sent to all clients in a group when bulk
-changes have occured to that group's history. When clients recieve this
+changes have occured to that group's history. When clients receive this
 message they should reload chat history for the group if they have any cached
 messages before `latest`.

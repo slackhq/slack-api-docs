@@ -8,6 +8,6 @@
 	}
 
 A `im_history_changed` event is sent to all clients in a DM channel when
-bulk changes have occured to that DM channel's history. When clients recieve
+bulk changes have occured to that DM channel's history. When clients receive
 this message they should reload chat history for the channel if they have any
 cached messages before `latest`.
