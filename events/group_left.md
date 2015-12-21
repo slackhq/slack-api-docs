@@ -12,5 +12,5 @@ leaves a private group. Clients should respond to this message by closing the
 group - this means that when a group is left from client A, it will
 automatically be closed in client B.
 
-In addition to this message, all existing members of the group will recieve a
+In addition to this message, all existing members of the group will receive a
 [`group_leave` message event](/events/message/group_leave).

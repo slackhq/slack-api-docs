@@ -1,7 +1,7 @@
 This method renames a team channel.
 
 The only people who can rename a channel are team admins, or the person that
-originally created the channel. Others will recieve a "not_authorized" error.
+originally created the channel. Others will receive a "not_authorized" error.
 
 
 ## Arguments

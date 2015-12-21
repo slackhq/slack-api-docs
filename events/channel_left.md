@@ -10,5 +10,5 @@ leaves a channel. Clients should respond to this message by closing the
 channel - this means that when a channel is left from client A, it will
 automatically be closed in client B.
 
-In addition to this message, all existing members of the channel will recieve a
+In addition to this message, all existing members of the channel will receive a
 [`channel_leave` message event](/events/message/channel_leave).
