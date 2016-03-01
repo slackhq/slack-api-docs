@@ -1,11 +1,11 @@
 {
-	"desc": "Sets the read cursor in a private group.",
+	"desc": "Sets the read cursor in a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to set reading cursor in."
+			"desc"		: "Private channel to set reading cursor in."
 		},
 
 		"ts": {

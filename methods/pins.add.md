@@ -20,3 +20,7 @@ After making this call the pin is saved to the database and [a `pin_added` event
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

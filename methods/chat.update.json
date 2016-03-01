@@ -24,11 +24,17 @@
 		"parse": {
 			"required"	: false,
 			"example"	: "none",
-			"desc"		: "Change how messages are treated. See below."
+			"desc"		: "Change how messages are treated. Defaults to `client`, unlike `chat.postMessage`. See [below](#formatting)."
 		},
 		"link_names": {
+			"required"	: false,
 			"example"	: "1",
-			"desc"		: "Find and link channel names and usernames."
+			"desc"		: "Find and link channel names and usernames. Defaults to `none`. This parameter should be used in conjunction with `parse`. To set `link_names` to `1`, specify a `parse` mode of `full`."
+		},
+		"as_user": {
+			"required"	: false,
+			"example"	: "true",
+			"desc"		: "Pass true to update the message as the authed user. [Bot users](/bot-users) in this context are considered authed users."
 		}
 	},
 

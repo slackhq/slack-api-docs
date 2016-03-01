@@ -24,3 +24,7 @@ it was called. Instead the response will include a `not_in_channel` property:
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

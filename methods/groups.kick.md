@@ -1,4 +1,4 @@
-This method allows a user to remove another member from a private group.
+This method allows a user to remove another member from a private channel.
 
 
 ## Arguments
@@ -16,3 +16,7 @@ This method allows a user to remove another member from a private group.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -1,5 +1,5 @@
 
-This method moves the read cursor in a private group.
+This method moves the read cursor in a private channel.
 
 
 ## Arguments
@@ -26,3 +26,7 @@ calls on shutdown/logout.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

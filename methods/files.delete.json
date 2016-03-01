@@ -4,7 +4,6 @@
 	"args": {
 		"file": {
 			"required"	: true,
-			"type"		: "file",
 			"desc"		: "ID of file to delete."
 		}
 	},

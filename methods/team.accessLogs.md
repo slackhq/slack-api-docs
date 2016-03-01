@@ -51,8 +51,12 @@ to login. `user_agent` is the reported user agent string from the browser or cli
 owns the ip address. `country` and `region` are similarly where we think that login came from, based on the ip address.
 
 The paging information contains the `count` of items returned, the `total` number of items reacted to, the `page` of results returned in this response and
-the total number of `pages` available.
+the total number of `pages` available. Please note that the max `count` value is `1000` and the max `page` value is `100`.
 
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

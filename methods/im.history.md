@@ -72,3 +72,7 @@ result set, but they are beyond the message limit.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

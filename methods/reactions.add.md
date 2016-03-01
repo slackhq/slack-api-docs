@@ -20,3 +20,7 @@ After making this call, the reaction is saved and [a `reaction_added` event](/ev
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -18,15 +18,18 @@ By default links to media are unfurled, but links to text content are not. For
 more information on the differences and how to control this, see the
 [the unfurling documentation](/docs/unfurling).
 
-By default messages are posted as [bot_messages](/events/message/bot_message).
-If `as_user` is true the message is instead posted as the authenticated user.
-Using the `as_user` argument requires the
-[client scope](/docs/oauth#auth_scopes). The `username`, `icon_url` and
-`icon_emoji` arguments are ignored if `as_user` is true.
+## Authorship
+
+By default, the `as_user` parameter is set to false and messages are posted as [bot_messages](/events/message/bot_message), with message authorship attributed to the default user name and icons associated with the [Custom Integration](/custom-integrations) or [Slack App](/slack-apps). 
+
+With `as_user` set to false, you may also provide a `username` to explicitly specify the bot user's identity for this message, along with `icon_url` or `icon_emoji`.
+
+Set `as_user` to `true` and the authenticated user will appear as the author of the message, ignoring any values provided for `username`, `icon_url`, and `icon_emoji`. Posting as the authenticated user **requires** the
+`client` or `chat:write:user` [scopes](/docs/oauth#auth_scopes).
 
 ## Channels
 
-You must specify a public channel, private group, or an IM channel with the `channel` argument. Each one behaves slightly differently based on the authenticated user's permissions and additional arguments:
+You **must** specify a public channel, private group, or an IM channel with the `channel` argument. Each one behaves slightly differently based on the authenticated user's permissions and additional arguments:
 
 #### Post to a public channel
 
@@ -48,14 +51,14 @@ Posting to an IM channel is a little more complex depending on the value of `as_
 
 ## Response
 
-	{
-		"ok": true,
-		"ts": "1405895017.000506",
-		"channel": "C024BE91L",
-		"message": {
-			…
-		}
-	}
+    {
+        "ok": true,
+        "ts": "1405895017.000506",
+        "channel": "C024BE91L",
+        "message": {
+            ...
+        }
+    }
 
 The response includes the timestamp (`ts`) and channel for the posted message. It also
 includes the complete message object, as it was parsed by our servers. This
@@ -65,3 +68,7 @@ attachments and other properties.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

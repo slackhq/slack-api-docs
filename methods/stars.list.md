@@ -53,8 +53,12 @@ other property depend on the type of item. The possible types are:
 
 The paging information contains the `count` of files returned, the `total`
 number of items starred, the `page` of results returned in this response and
-the total number of `pages` available.
+the total number of `pages` available. Please note that the max `count` value is `1000` and the max `page` value is `100`.
 
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

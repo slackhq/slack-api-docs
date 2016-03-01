@@ -1,11 +1,11 @@
 {
-	"desc": "Closes a private group.",
+	"desc": "Closes a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to open."
+			"desc"		: "Private channel to close."
 		}
 	},
 

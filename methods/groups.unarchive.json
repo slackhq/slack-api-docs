@@ -1,11 +1,11 @@
 {
-	"desc": "Unarchives a private group.",
+	"desc": "Unarchives a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to unarchive"
+			"desc"		: "Private channel to unarchive"
 		}
 	},
 

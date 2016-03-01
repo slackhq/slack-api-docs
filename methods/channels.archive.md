@@ -14,3 +14,7 @@ This method archives a channel.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

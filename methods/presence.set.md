@@ -17,3 +17,7 @@ This method has been deprecated in favor of [the users.setPresence method](/meth
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

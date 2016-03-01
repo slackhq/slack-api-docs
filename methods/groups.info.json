@@ -1,11 +1,11 @@
 {
-	"desc": "Gets information about a private group.",
+	"desc": "Gets information about a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Group to get info on"
+			"desc"		: "Private channel to get info on"
 		}
 	},
 

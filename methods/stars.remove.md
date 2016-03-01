@@ -20,3 +20,7 @@ After making this call, the item will be unstarred and [a `star_removed` event](
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -15,3 +15,7 @@ This method is used to change the purpose of a channel. The calling user must be
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

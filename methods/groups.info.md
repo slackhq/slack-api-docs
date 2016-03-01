@@ -1,5 +1,5 @@
 
-This method returns information about a private group.
+This method returns information about a private channel.
 
 
 ## Arguments
@@ -39,3 +39,7 @@ Returns a [group object](/types/group):
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

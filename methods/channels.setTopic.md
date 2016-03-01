@@ -15,3 +15,7 @@ This method is used to change the topic of a channel. The calling user must be a
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

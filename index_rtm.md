@@ -195,3 +195,7 @@ As with all Slack APIs, the RTM API is subject to
 [rate limits](/docs/rate-limits). Clients should not
 send more than one message per second sustained. If you do you may receive an
 error message or be disconnected.
+
+## What's a WebSocket?
+
+[WebSockets](https://en.wikipedia.org/wiki/WebSocket) are a standard way to open a long-lived bi-directional communication channel with a server over TCP. It's the protocol used when connecting to our [RTM API](/rtm). Many [contributions from our community](/community) support the particulars of connecting to Slack via a WebSocket.

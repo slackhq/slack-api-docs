@@ -1,10 +1,10 @@
 {
-	"desc": "Creates a private group.",
+	"desc": "Creates a private channel.",
 
 	"args": {
 		"name": {
 			"required"	: true,
-			"desc"		: "Name of group to create"
+			"desc"		: "Name of private channel to create"
 		}
 	},
 

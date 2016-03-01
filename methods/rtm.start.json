@@ -12,7 +12,12 @@
 	            "type"	: "int",
 	            "required"  : false,
 	            "desc"      : "Skip unread counts for each channel (improves performance)."
-	        }
+	        },
+	        "mpim_aware": {
+				"type" 		: "bool",
+				"required"	: false,
+				"desc"		: "Returns MPIMs to the client in the API response."
+			}
 	},
 
 

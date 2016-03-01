@@ -26,3 +26,7 @@ calls on shutdown/logout.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

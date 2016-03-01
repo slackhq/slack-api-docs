@@ -1,6 +1,6 @@
 
-This method returns a portion of messages/events from the specified private group.
-To read the entire history for a group, call the method with no `latest` or
+This method returns a portion of messages/events from the specified private channel.
+To read the entire history for a private channel, call the method with no `latest` or
 `oldest` arguments, and then continue paging using the instructions below.
 
 
@@ -72,3 +72,7 @@ result set, but they are beyond the message limit.
 # Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

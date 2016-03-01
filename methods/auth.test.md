@@ -22,3 +22,7 @@ This method checks authentication and tells you who you are.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

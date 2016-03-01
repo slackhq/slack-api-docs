@@ -1,10 +1,13 @@
-This method renames a private group.
+This method renames a private channel.
 
 
 ## Arguments
 
 {ARGS}
 
+## Naming
+
+Private channel names can only contain lowercase letters, numbers, hyphens, and underscores, and must be 21 characters or less. We will validate the submitted channel name and modify it to meet the above criteria. When calling this method, we recommend storing the channel's `name` value that is returned in the response.
 
 ## Response
 
@@ -24,3 +27,7 @@ Returns the channel ID, name and date created (as a unix timestamp).
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

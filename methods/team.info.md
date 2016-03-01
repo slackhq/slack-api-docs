@@ -28,8 +28,16 @@ This method provides information about your team.
          }
      }
 
+## Team Icon
+
+If a team has not yet set a custom icon, the value of `team.icon.image_default` will be `true`.
+
 ## Errors
 
 {ERRORS}
 
 
+
+## Warnings
+
+{WARNINGS}

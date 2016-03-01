@@ -7,15 +7,25 @@ The Slack API is made up of several different tools that enable you to build dif
 
 Well, it depends! Our API tools let you extend Slack to play nicely with your team's workflow, external services, and other applications. But how do you figure out where to start, and which Slack APIs are best for you? You've come to the right place. Let us guide you through some examples that will help you pick the right tools for each job.
 
+### I run a service and want the simplest way for my users to integrate it with Slack.
 
+Maybe you run a newsletter service that sends notifications to publishers when a new person signs up for their mailing list. 
 
-### I want to post messages, links, images, and other content _in Slack_
+Or you're an e-commerce service and want to let your users get summaries of sales from their online store, either automatically or on demand. 
 
-Do you want a really powerful way to inform your users when something important happens in your product or service? Let your users subscribe to them in Slack! 
+Whatever kind of service you run: You want people to know the things they need to know, as quickly, and as easily, as possible. And the Slack button wants to help you out with that.
 
-Maybe you're a newsletter service that sends notifications to publishers when a new person signs up for their mailing list, or you're an e-commerce service and want to let your users receive an hourly summary of sales from their online store.
+<img src="/img/add_to_slack_promo.png" style="float:right;margin:0 0 10px 10px;border:0;">
 
-**Best way to do this:** With an [incoming webhook](/incoming-webhooks). They're the simplest way to programmatically send messages into Slack. Simply send a JSON payload containing your message content to a pre-configured incoming webhook URL that your users set up for you, and Slack will turn it into a message for the right team, in the right channel. For more information and some examples, read our [incoming webhook documentation](/incoming-webhooks).
+**Best way to do this:** Use the [Slack button](https://api.slack.com/docs/slack-button). The new Slack button is the simplest way to offer your service to teams using Slack. A Slack button app gives you [incoming webhooks](https://api.slack.com/incoming-webhooks) and [slash commands](https://api.slack.com/slash-commands) wrapped in OAuth. You write the commands and the webhook that your app needs, and configure the options for your users. Then your users can install it in just a few clicks. Over the next few months, we'll be expanding the capabilities of apps that can be added via the Slack button, so now is a great time to get started with them! [Read more about how to implement the Slack button on your site](https://api.slack.com/docs/slack-button).
+
+![Screenshot of incoming webhook message](/img/api/guide_breaking_news_screenshot.png)
+
+### I want to post custom messages, links, images, and other content in my Slack team from other systems
+
+Like most businesses today, you probably use multiple systems to keep things running, and they all have information you need throughout the day. Not all of those systems will have pre-built Slack integrations, and of the ones that do, they might not deliver the specific information that your team needs. In this case, you will need to create something for yourself.
+
+Best way to do this as a custom feature for your team: With an [incoming webhook](https://api.slack.com/incoming-webhooks). They're the simplest way to programmatically send messages into Slack. Simply send a JSON payload containing your message content to a pre-configured incoming webhook URL that your users set up for you, and Slack will turn it into a message for the right team, in the right channel. For more information and some examples, read our [incoming webhook documentation](https://api.slack.com/incoming-webhooks).
 
 ![Screenshot of messages posted via incoming webhooks](/img/api/guide_incoming_webhook.png)
 

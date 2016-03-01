@@ -1,6 +1,6 @@
 # Group Objects
 
-A group object contains information about a private group.
+A group object contains information about a private channel. Private channels were once known as "private groups." Consider a group object the same thing as a private channel object.
 
     {
         "id": "G024BE91L",
@@ -9,6 +9,7 @@ A group object contains information about a private group.
         "created": 1360782804,
         "creator": "U024BE7LH",
         "is_archived": false,
+        "is_mpim": false,
         "members": [
             "U024BE7LH"
         ],
@@ -30,18 +31,22 @@ A group object contains information about a private group.
 
     },
 
-The `name` parameter indicates the name of the group.
+The `name` parameter indicates the name of the private channel.
 
-`creator` is the user ID of the member that created this group. `created` is
+`creator` is the user ID of the member that created this private channel. `created` is
 a unix timestamp.
 
-`is_archived` will be true if the group is archived.
+`is_archived` will be true if the private channel is archived.
 
-`members` is a list of user ids for all users in this group. This
-includes any disabled accounts that were in this group when they were
+`members` is a list of user ids for all users in this private channel. This
+includes any disabled accounts that were in this private channel when they were
 disabled.
 
-`topic` and `purpose` provide information about the group topic and purpose.
+`mpims` is a boolean that indicated if a multiparty im (`mpim`) is being
+emulated as a private channel.  For compatibility with older clients, `mpims` can
+appear as private channels unless `rtm.start` is called with `mpim_aware=1`.
+
+`topic` and `purpose` provide information about the private channel topic and purpose.
 
 Some API methods (such as [groups.create](/methods/groups.create)) will
 include extra state information for channels when the calling user is a

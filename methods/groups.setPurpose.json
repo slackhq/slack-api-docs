@@ -1,11 +1,11 @@
 {
-	"desc": "Sets the purpose for a private group.",
+	"desc": "Sets the purpose for a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Private group to set the purpose of"
+			"desc"		: "Private channel to set the purpose of"
 		},
 		"purpose": {
 			"required"	: true,

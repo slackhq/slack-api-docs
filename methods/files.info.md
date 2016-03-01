@@ -78,9 +78,13 @@ The [file object](/types/file) contains information about the uploaded file.
 Each comment object in the comments array contains details about a single comment. Comments are returned oldest first.
 
 The paging information contains the `count` of comments returned, the `total` number of
-comments, the `page` of results returned in this response and the total number of `pages` available.
+comments, the `page` of results returned in this response and the total number of `pages` available. Please note that the max `count` value is `1000` and the max `page` value is `100`.
 
 
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

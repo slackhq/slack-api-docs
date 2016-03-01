@@ -15,3 +15,7 @@ Call the method - see what happens :D
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

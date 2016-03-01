@@ -39,3 +39,7 @@ further pages of messages or files.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

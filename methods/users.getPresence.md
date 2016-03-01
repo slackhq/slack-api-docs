@@ -39,3 +39,7 @@ the current presence, along with details on how it was calculated:
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

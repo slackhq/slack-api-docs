@@ -40,3 +40,7 @@ Returns a [channel object](/types/channel):
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

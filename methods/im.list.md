@@ -36,3 +36,7 @@ Returns a list of [IM objects](/types/im):
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

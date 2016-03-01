@@ -35,3 +35,7 @@ If the channel was already open the response will include `no_op` and
 {ERRORS}
 
 
+
+## Warnings
+
+{WARNINGS}

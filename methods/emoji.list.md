@@ -27,3 +27,7 @@ emoji this emoji is an alias to.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

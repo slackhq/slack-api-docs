@@ -1,11 +1,11 @@
 {
-	"desc": "Sets the topic for a private group.",
+	"desc": "Sets the topic for a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Private group to set the topic of"
+			"desc"		: "Private channel to set the topic of"
 		},
 		"topic": {
 			"required"	: true,

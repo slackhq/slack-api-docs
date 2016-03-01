@@ -15,3 +15,7 @@ This method allows a user to remove another member from a team channel.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

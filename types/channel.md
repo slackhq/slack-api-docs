@@ -62,3 +62,5 @@ read in this channel. `unread_count` is a full count of visible messages that th
 calling user has yet to read. `unread_count_display` is a count of messages that
 the calling user has yet to read that matter to them (this means it excludes things
 like join/leave messages). `latest` is the latest message in the channel.
+
+These channel objects are not the same object type as private channels, which are considered [group objects](/types/group).

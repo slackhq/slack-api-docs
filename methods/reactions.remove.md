@@ -20,3 +20,7 @@ After making this call, the reaction is removed and [a `reaction_removed` event]
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

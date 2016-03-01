@@ -35,3 +35,7 @@ the total number of `pages` available.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -20,3 +20,7 @@ After making this call, the item will be starred and [a `star_added` event](/eve
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

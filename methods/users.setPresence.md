@@ -16,3 +16,7 @@ This method lets you set the calling user's manual presence.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

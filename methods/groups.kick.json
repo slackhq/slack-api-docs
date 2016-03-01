@@ -1,16 +1,16 @@
 {
-	"desc": "Removes a user from a private group.",
+	"desc": "Removes a user from a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to remove user from."
+			"desc"		: "Private channel to remove user from."
 		},
 		"user": {
 			"type"		: "user",
 			"required"	: true,
-			"desc"		: "User to remove from group."
+			"desc"		: "User to remove from private channel."
 		}
 	},
 

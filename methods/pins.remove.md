@@ -20,3 +20,7 @@ After making this call the pin is removed from the database and [a `pin_removed`
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -1,16 +1,16 @@
 {
-	"desc": "Renames a private group.",
+	"desc": "Renames a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "channel",
 			"required"	: true,
-			"desc"		: "Group to rename"
+			"desc"		: "Private channel to rename"
 		},
 
 		"name": {
 			"required"	: true,
-			"desc"		: "New name for group."
+			"desc"		: "New name for private channel."
 		}
 	},
 

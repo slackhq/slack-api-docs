@@ -1,11 +1,11 @@
 {
-	"desc": "Archives a private group.",
+	"desc": "Archives a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Private group to archive"
+			"desc"		: "Private channel to archive"
 		}
 	},
 

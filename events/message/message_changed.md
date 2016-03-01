@@ -22,6 +22,6 @@ A `message_changed` message is sent when a message in a channel is edited
 using the [`chat.update` method](/methods/chat.update). The `message` property
 contains the updated message object.
 
-When clients recieve this message type, they should look for an existing
+When clients receive this message type, they should look for an existing
 message with the same `message.ts` in that `channel`. If they find one the
 existing message should be replaced with the new one.

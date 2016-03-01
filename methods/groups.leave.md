@@ -1,4 +1,4 @@
-This method is used to leave a private group.
+This method is used to leave a private channel.
 
 ## Arguments
 
@@ -15,3 +15,7 @@ This method is used to leave a private group.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

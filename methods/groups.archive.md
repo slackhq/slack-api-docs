@@ -1,4 +1,4 @@
-This method archives a private group.
+This method archives a private channel.
 
 ## Arguments
 
@@ -14,3 +14,7 @@ This method archives a private group.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -6,7 +6,6 @@ Attachments can be added to messages in different ways:
 
 * For [Incoming Webhooks](https://my.slack.com/services/new/incoming-webhook), send a regular payload, but include an `attachments` array, where each element is a hash containing an attachment.
 * For [the Web API](/methods/chat.postMessage), include an `attachments` property, containing a JSON-encoded array of attachment hashes.
-* For [Hammock](https://github.com/tinyspeck/hammock), pass an array of attachment hashes.
 
 
 ## Attachment structure
@@ -121,8 +120,6 @@ Using a combination of the provided message attachment parameters, you can creat
 #### Example: Groove
 
 ![Screenshot of a groove message](/img/api/attachment_example_groove.png)
-
-<img src="/img/api/attachment_example_groove.png" style="border-radius: 0.5rem; border: 1px solid #DDD;">
 
     {
         "attachments": [

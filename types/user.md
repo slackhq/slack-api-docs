@@ -37,10 +37,12 @@ For deactivated users, `deleted` will be `true`.
 
 The `color` field is used in some clients to display a colored  username.
 
-The `profile` hash contains as much profile information as the user has
-supplied - only the `image_*` fields are guaranteed to be included. Data that
-has not been supplied may not be present at all, may be `null` or  may contain
-the empty string (`""`).
+The profile hash contains as much information as the user has supplied in the 
+default profile fields: `first_name`, `last_name`, `real_name`, `email`, 
+`skype`, and the `image_*` fields. Only the `image_*` fields are guaranteed to 
+be included. Data that has not been supplied may not be present at all, may be 
+null or may contain the empty string (""). Please note that custom profile 
+fields are not yet available through the API.
 
 The `image_*` fields will always contain `https` URLs to square, web-viewable
 images (GIFs, JPEGs or PNGs).

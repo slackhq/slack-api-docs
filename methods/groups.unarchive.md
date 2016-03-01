@@ -1,4 +1,4 @@
-This method unarchives a private group.
+This method unarchives a private channel.
 
 ## Arguments
 
@@ -14,3 +14,7 @@ This method unarchives a private group.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

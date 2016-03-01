@@ -38,3 +38,7 @@ This method is used to invite a user to a channel. The calling user must be a me
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

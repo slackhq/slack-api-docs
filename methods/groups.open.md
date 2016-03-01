@@ -1,4 +1,4 @@
-This method opens a private group.
+This method opens a private channel.
 
 
 ## Arguments
@@ -12,7 +12,7 @@ This method opens a private group.
 		"ok": true
 	}
 
-If the group was already open the response will include `no_op` and
+If the private channel was already open the response will include `no_op` and
 `already_open` properties:
 
 
@@ -28,3 +28,7 @@ If the group was already open the response will include `no_op` and
 {ERRORS}
 
 
+
+## Warnings
+
+{WARNINGS}

@@ -14,3 +14,7 @@ This method unarchives a channel. The calling user is added to the channel.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

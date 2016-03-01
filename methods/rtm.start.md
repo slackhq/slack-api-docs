@@ -29,6 +29,9 @@ with a WebSocket Message Server URL:
             "name": "Example Team",
             "email_domain": "",
             "domain": "example",
+            "icon": {
+                …
+            },
             "msg_edit_window_mins": -1,
             "over_storage_limit": false
             "prefs": {
@@ -40,6 +43,7 @@ with a WebSocket Message Server URL:
 
         "channels": [ … ],
         "groups": [ … ],
+        "mpims": [ … ],
         "ims": [ … ],
 
         "bots": [ … ],
@@ -51,8 +55,10 @@ URL will initiate a Real Time Messaging session. These URLs are only valid for
 
 The `self` property contains details on the authenticated user.
 
-The `team` property contains details on the authenticated user's team. The
-`users` property contains a list of [user objects](/types/user), one for every
+The `team` property contains details on the authenticated user's team. If a team has
+not yet set a custom icon, the value of `team.icon.image_default` will be `true`.
+
+The `users` property contains a list of [user objects](/types/user), one for every
 member of the team.
 
 The `channels` property is a list of [channel objects](/types/channel), one
@@ -65,6 +71,11 @@ list and read-state related information.
 The `groups` property is a list of [group objects](/types/group), one for
 every group the authenticated user is in.
 
+The `mpims` property is a list of [mpims objects](/types/mpim), one for
+every group the authenticated user is in.  MPIMs are only returned to the client
+if `mpim_aware` is set when calling `rtm.start`.  Otherwise, `mpims` are emulated
+using the groups API.
+
 The `ims` property is a list of
 [IM objects](/types/im), one for every direct message channel visible to the
 authenticated user.
@@ -75,3 +86,7 @@ The `bots` property gives details of the integrations set up on this team.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

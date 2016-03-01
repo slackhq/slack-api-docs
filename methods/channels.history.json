@@ -33,6 +33,13 @@
 			"default"	: "100",
 			"example"	: "100",
 			"desc"		: "Number of messages to return, between 1 and 1000."
+		},
+
+		"unreads": {
+			"required"	: false,
+			"default"	: 0,
+			"example"	: 1,
+			"desc"		: "Include `unread_count_display` in the output?"
 		}
 	},
 

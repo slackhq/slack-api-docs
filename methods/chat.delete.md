@@ -21,3 +21,7 @@ message.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

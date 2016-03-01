@@ -39,7 +39,12 @@ up in the results so that clients may replace them with appropriate highlighting
 	start: "\xEE\x80\x80"; # U+E000 (private-use)
 	end  : "\xEE\x80\x81"; # U+E001 (private-use)
 
+Please note that the max `count` value is `1000` and the max `page` value is `100`.
 
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

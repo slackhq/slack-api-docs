@@ -61,3 +61,7 @@ the same as the channel `#general` that the user is already in:
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

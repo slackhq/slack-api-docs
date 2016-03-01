@@ -1,4 +1,4 @@
-This method closes a private group.
+This method closes a private channel.
 
 
 ## Arguments
@@ -12,7 +12,7 @@ This method closes a private group.
 		"ok": true
 	}
 
-If the group was already closed the response will include `no_op` and
+If the private channel was already closed the response will include `no_op` and
 `already_closed` properties:
 
 
@@ -28,3 +28,7 @@ If the group was already closed the response will include `no_op` and
 {ERRORS}
 
 
+
+## Warnings
+
+{WARNINGS}

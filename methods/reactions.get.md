@@ -44,3 +44,7 @@ whether `count` is greater than `users.length` or not. If the complete list of u
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

@@ -29,3 +29,7 @@ property:
 {ERRORS}
 
 
+
+## Warnings
+
+{WARNINGS}

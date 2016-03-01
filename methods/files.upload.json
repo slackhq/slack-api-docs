@@ -3,9 +3,10 @@
 
 	"args": {
 		"file": {
-			"required"	: false,
+			"required"	: true,
 			"example"	: "...",
-			"desc"		: "File contents via `multipart/form-data`."
+			"desc"		: "File contents via `multipart/form-data`.",
+			"type"		: "file"
 		},
 		"content": {
 			"required"	: false,
@@ -18,7 +19,7 @@
 			"desc"		: "Slack-internal file type identifier."
 		},
 		"filename": {
-			"required"	: false,
+			"required"	: true,
 			"example"	: "foo.txt",
 			"desc"		: "Filename of file."
 		},
@@ -35,11 +36,12 @@
 		"channels": {
 			"type"		: "channel",
 			"required"	: false,
-			"desc"		: "Comma separated list of channels to share the file into."
+			"desc"		: "Comma-separated list of channel names or IDs where the file will be shared."
 		}
 	},
 
 	"errors": {
-		"posting_to_general_channel_denied"	: "An admin has restricted posting to the #general channel."
+		"posting_to_general_channel_denied"	: "An admin has restricted posting to the #general channel.",
+		"invalid_channel"			: "One or more channels supplied are invalid"
 	}
 }

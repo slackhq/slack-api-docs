@@ -1,11 +1,11 @@
 {
-	"desc": "Invites a user to a private group.",
+	"desc": "Invites a user to a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Private group to invite user to."
+			"desc"		: "Private channel to invite user to."
 		},
 		"user": {
 			"type"		: "user",

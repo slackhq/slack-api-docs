@@ -1,11 +1,11 @@
 {
-	"desc": "Leaves a private group.",
+	"desc": "Leaves a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to leave"
+			"desc"		: "Private channel to leave"
 		}
 	},
 

@@ -3,9 +3,9 @@
 
 	"args": {
 		"file": {
-			"type"		: "file",
 			"required"	: true,
-			"desc"		: "File to fetch info for"
+			"desc"		: "Specify a file by providing its ID.",
+			"example"	: "F2147483862"
 		}
 	},
 

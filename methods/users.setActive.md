@@ -18,3 +18,7 @@ more details.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

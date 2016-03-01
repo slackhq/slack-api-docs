@@ -15,3 +15,7 @@ This method deletes a file from your team.
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

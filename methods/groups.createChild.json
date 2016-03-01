@@ -1,11 +1,11 @@
 {
-	"desc": "Clones and archives a private group.",
+	"desc": "Clones and archives a private channel.",
 
 	"args": {
 		"channel": {
 			"type"		: "group",
 			"required"	: true,
-			"desc"		: "Group to clone and archive."
+			"desc"		: "Private channel to clone and archive."
 		}
 	},
 

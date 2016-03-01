@@ -7,6 +7,11 @@
 			"required"	: false,
 			"desc"		: "Filter files created by a single user."
 		},
+		"channel": {
+			"type"		: "channel",
+			"required"	: false,
+			"desc"		: "Filter files appearing in a specific channel, indicated by its ID."
+		},
 		"ts_from": {
 			"required"	: false,
 			"example"	: "123456789",

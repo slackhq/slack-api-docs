@@ -1,4 +1,4 @@
-This method is used to change the topic of a private group. The calling user must be a member of the private group.
+This method is used to change the topic of a private channel. The calling user must be a member of the private channel.
 
 ## Arguments
 
@@ -15,3 +15,7 @@ This method is used to change the topic of a private group. The calling user mus
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}

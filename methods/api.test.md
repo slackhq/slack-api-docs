@@ -31,3 +31,7 @@ If called with an `error` argument an error response is returned:
 ## Errors
 
 {ERRORS}
+
+## Warnings
+
+{WARNINGS}
