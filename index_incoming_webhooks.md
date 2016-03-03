@@ -85,7 +85,7 @@ To create a link in your text, enclose the URL in `<>` angle brackets. For examp
 To display hyperlinked text instead of the actual URL, use the pipe character, as shown in this example:
 
     {
-    	"text": "<https://alert-system.com/alerts/1234|Click here> for details!"
+        "text": "<https://alert-system.com/alerts/1234|Click here> for details!"
     }
 
 This will be displayed in the channel as:
@@ -102,13 +102,13 @@ Though it is best to use a single incoming webhook for a specific purpose, in so
 
 Incoming webhooks originate from a default identity you configured when originally creating your webhook. You can override a custom integration's configured name with the `username` field in your JSON payload.
 
-You can also override the bot icon either with `icon_url` or `icon_emoji"`.
+You can also override the bot icon either with `icon_url` or `icon_emoji`.
 
-	{
-	    "username": "ghost-bot",
-	    "icon_emoji": ":ghost:",
+    {
+        "username": "ghost-bot",
+        "icon_emoji": ":ghost:",
         "text": "BOO!"
-	}
+    }
 
 An overridden username and icon could look like this:
 
@@ -161,17 +161,17 @@ You will be able to set up an incoming webhook when you create a [Slack app](/sl
 Once a user installs your app, you will exchange the `code` for an access token using [the `oauth.access` method](https://api.slack.com/methods/oauth.access). The JSON response from this API call will contain the access token and incoming webhook URL:
 
 
-	{
-		"access_token": "xoxp-XXXXXXXX-XXXXXXXX-XXXXX",
-		"scope": "incoming-webhook",
-		"team_name": "Team Installing Your Hook",
-		"incoming_webhook": {
-			"url": "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX",
-			"channel": "#channel-it-will-post-to",
-			"channel_id": "C05002EAE",
-			"configuration_url": "https://teamname.slack.com/services/BXXXXX"
-		}
-	}
+    {
+        "access_token": "xoxp-XXXXXXXX-XXXXXXXX-XXXXX",
+        "scope": "incoming-webhook",
+        "team_name": "Team Installing Your Hook",
+        "incoming_webhook": {
+            "url": "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX",
+            "channel": "#channel-it-will-post-to",
+            "channel_id": "C05002EAE",
+            "configuration_url": "https://teamname.slack.com/services/BXXXXX"
+        }
+    }
 
 Keep in mind that incoming webhooks packaged as Slack apps cannot override the default channel, username, or icon associated with the webhook.
 

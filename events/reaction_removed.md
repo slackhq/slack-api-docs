@@ -1,16 +1,19 @@
 # reaction_removed event type
 
-	{
-		"type": "reaction_removed",
-		"user": "U024BE7LH",
-		"name": "thumbsup",
-		"item": {
-			…
-		},
-		"event_ts": "1360782804.083113"
-	}
+    {
+        "type": "reaction_removed",
+        "user": "U024BE7LH",
+        "reaction": "thumbsup",
+        "item_user":"U0G9QF9C6",
+        "item": {
+            ...
+        },
+        "event_ts": "1360782804.083113"
+    }
 
 When a reaction is removed from an item the `reaction_removed` event is sent to all connected clients for users who can see the content that had the reaction.
+
+The `user` field indicates the ID of the user who performed this event. The `item_user` field represents the ID of the user that created the original item that has been reacted to.
 
 ### Embedded item objects
 

@@ -1,16 +1,20 @@
 # reaction_added event type
 
-	{
-		"type": "reaction_added",
-		"user": "U024BE7LH",
-		"name": "thumbsup",
+
+    {
+        "type": "reaction_added",
+        "user": "U024BE7LH",
+        "reaction": "thumbsup",
+        "item_user": "U0G9QF9C6",
         "item": {
-            …
+            ...
         },
-		"event_ts": "1360782804.083113"
-	}
+        "event_ts": "1360782804.083113"
+    }
 
 When a reaction is added to an item the `reaction_added` event is sent to all connected clients for users who can see the content that was reacted to.
+
+The `user` field indicates the ID of the user who performed this event. The `item_user` field represents the ID of the user that created the original item that has been reacted to.
 
 ### Embedded item objects
 

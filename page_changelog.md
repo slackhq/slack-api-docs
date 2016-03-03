@@ -4,6 +4,7 @@ We improve the Slack platform every day by releasing new features, squashing bug
 
 
 ### February 2016
+* <span class="btn btn_small pill_btn new_feature">APIs</span> [`reaction_added`](/events/reaction_added) &amp; [`reaction_removed`](/events/reaction_removed) events now include an `item_user` field indicating the user that created the original content everyone's raving about.
 * <span class="btn btn_small pill_btn docs">Docs</span> Published this [changelog](/docs/changelog) you're reading right now. So that you can know about all this stuff. Tell your friends.
 * <span class="btn btn_small pill_btn new_feature">APIs</span> New Web API methods: share files publicly with [`files.sharedPublicURL`](/methods/files.sharedPublicURL) or make them private again with [`files.revokePublicURL`](/methods/files.revokePublicURL).
 * <span class="btn btn_small pill_btn new_feature">APIs</span> [`files.comments.add`](/methods/files.comments.add), [`files.comments.edit`](/methods/files.comments.edit), and [`files.comments.delete`](/methods/files.comments.delete) are now available to [bot users](/bot-users).
