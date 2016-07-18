@@ -102,12 +102,16 @@ A valid URL to an image file that will be displayed inside a message attachment.
 
 Large images will be resized to a maximum width of 400px or a maximum height of 500px, while still maintaining the original aspect ratio.
 
+**Notice:** If `image_url` is supplied `thumb_url` is ignored.
+
 ![Screenshot of an attachment with a large image](/img/api/attachment_image.png)
 
 ###thumb_url
 A valid URL to an image file that will be displayed as a thumbnail on the right side of a message attachment. We currently support the following formats: GIF, JPEG, PNG, and BMP.
 
 The thumbnail's longest dimension will be scaled down to 75px while maintaining the aspect ratio of the image. The filesize of the image must also be less than 500 KB.
+
+**Notice:** If `image_url` is supplied `thumb_url` is ignored.
 
 ![Screenshot of an attachment with a thumbnail image](/img/api/attachment_thumb.png)
 
