@@ -198,7 +198,7 @@ Valid values for `mrkdwn_in` are: `["pretext", "text", "fields"]`. Setting `"fie
 
 If you want to display formatted messages on the web, your client should take the following steps:
 
-1.  Detect all sequences matching `<(.*?)>`
+1.  Detect all sequences matching `<([^>]*)>`
 2.  Within those sequences, format content starting with `#C` as a channel link
 3.  Within those sequences, format content starting with `@U` as a user link
 4.  Within those sequences, format content starting with `!` according to the rules for the special command.
