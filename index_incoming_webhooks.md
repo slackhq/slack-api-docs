@@ -69,6 +69,18 @@ The trickiest part of this approach is that you must properly [URL encode](https
 
 Many HTTP clients provide convenient functions for URL encoding and setting the `Content-type`.
 
+<div class="example rounded no_padding">
+<h5>javascript example <i class="ts_icon ts_icon_code"></i></h5>
+<pre class="small code_wrap top_margin">var webhook_url = 'https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX';
+var request = new XMLHttpRequest(); 
+// important: replace #myChannel with the name of your channel. Keep the # sign
+var json = 'payload={"channel": "#myChannel", "username": "myBot", "text": "This is a line of text.\nAnd this is another one."}'; 
+request.open('POST', webhook_url, false); 
+request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+request.send(json);
+</pre>
+</div>
+
 <div class="example">
 <h5>curl example <i class="ts_icon ts_icon_code"></i></h5>
 <pre class="small code_wrap top_margin">curl -X POST --data-urlencode 'payload={"text":"This is a line of text.\nAnd this is another one."}' https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX</pre>
