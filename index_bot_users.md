@@ -60,7 +60,7 @@ If you are the developer of an app or service that wants to provide bot-based fu
 
 ### Programming bot users
 Creating bot users probably means you'll be coding. If you're using an existing library (such as
-[node-slack-client](https://github.com/slackhq/node-slack-client)) then your bot access token should be all you need to get started.
+[node-slack-client](https://slackapi.github.io/node-slack-sdk/)) then your bot access token should be all you need to get started.
 
 If you're writing your own library from scratch, you'll need to write code to
 [make authenticated API calls](/web#authentication) and consume
