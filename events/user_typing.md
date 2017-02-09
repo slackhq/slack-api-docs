@@ -1,7 +1,7 @@
 # user_typing event
 
 	{
-		"type": "user_typing",
+		"type": "typing",
 		"channel": "C02ELGNBH",
 		"user": "U024BE7LH"
 	}
