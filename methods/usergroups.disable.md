@@ -35,7 +35,7 @@ This method disables an existing user group.
         }
     }
 
-When a user group has been disabled it's `date_delete` parameter will be non-zero.
+When a user group has been disabled its `date_delete` parameter will be non-zero.
 
 ## Errors
 
