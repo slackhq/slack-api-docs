@@ -5,7 +5,7 @@ A channel object contains information about a team channel.
 	{
 		"id": "C024BE91L",
 		"name": "fun",
-		"is_channel": "true",
+		"is_channel": true,
 		"created": 1360782804,
 		"creator": "U024BE7LH",
 		"is_archived": false,
