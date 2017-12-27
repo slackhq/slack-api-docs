@@ -69,12 +69,14 @@ Here's a more verbose example JSON response including a Bot user access token:
     {
         "access_token": "xoxp-XXXXXXXX-XXXXXXXX-XXXXX",
         "scope": "incoming-webhook,commands,bot",
+        "user_id": "UXXXXXXX",
         "team_name": "Team Installing Your Hook",
         "team_id": "XXXXXXXXXX",
         "incoming_webhook": {
-            "url": "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX",
-            "channel": "#channel-it-will-post-to",
-            "configuration_url": "https://teamname.slack.com/services/BXXXXX"
+		"channel": "#channel-it-will-post-to",
+		"channel_id": "XXXXXXX",
+		"configuration_url": "https://teamname.slack.com/services/BXXXXX",
+		"url": "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX",
         },
         "bot":{
             "bot_user_id":"UTTTTTTTTTTR",
