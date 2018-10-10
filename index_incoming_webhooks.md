@@ -1,6 +1,6 @@
 ##Send data into Slack in real-time.
 
-Incoming Webhooks are a simple way to post messages from external sources into Slack. They make use of normal HTTP requests with a [JSON](https://en.wikipedia.org/wiki/JSON) payload that includes the message text and some options. [Message Attachments](/docs/attachments/) can also be used in Incoming Webhooks to display richly-formatted messages that stand out from regular chat messages.
+Incoming Webhooks are a simple way to post messages from external sources into Slack. They make use of normal HTTP requests with a [JSON](https://en.wikipedia.org/wiki/JSON) payload that includes the message text and some options. [Message Attachments](/page_attachments.md) can also be used in Incoming Webhooks to display richly-formatted messages that stand out from regular chat messages.
 
 Start by setting up an [incoming webhook integration](https://my.slack.com/services/new/incoming-webhook/) in your Slack team to try these features out:
 
@@ -131,7 +131,7 @@ If you prefer, you can also specify a channel ID or user ID like so: `"channel":
 
 ###Advanced message formatting
 
-You can use [Slack's standard message markup](/docs/formatting) to add simple formatting to your messages. You can also use [message attachments](/docs/attachments) to display richly-formatted message blocks.
+You can use [Slack's standard message markup](/page_formatting.md) to add simple formatting to your messages. You can also use [message attachments](/page_attachments.md) to display richly-formatted message blocks.
 
 ![Screenshot of a simple incoming webhook with an attachment](/img/api/attachment_fields.png)
 
