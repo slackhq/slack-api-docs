@@ -1,4 +1,4 @@
-##Send data into Slack in real-time.
+## Send data into Slack in real-time.
 
 Incoming Webhooks are a simple way to post messages from external sources into Slack. They make use of normal HTTP requests with a [JSON](https://en.wikipedia.org/wiki/JSON) payload that includes the message text and some options. [Message Attachments](/page_attachments.md) can also be used in Incoming Webhooks to display richly-formatted messages that stand out from regular chat messages.
 
@@ -13,7 +13,7 @@ Start by setting up an [incoming webhook integration](https://my.slack.com/servi
 
 Use [**curl**](http://curl.haxx.se/), a simple, ubiquitous tool for sending HTTP requests on the command line, for the *curl examples* that follow.
 
-###Sending messages
+### Sending messages
 
 Let's learn how to send this in-channel message as an incoming webhook:
 
@@ -78,7 +78,7 @@ Using the `--data-urlencode` curl parameter automatically URL encodes the provid
 
 ---
 
-###Adding links
+### Adding links
 
 To create a link in your text, enclose the URL in `<>` angle brackets. For example: `payload={"text": "<https://slack.com>"}` will post a clickable link to https://slack.com.
 
@@ -98,7 +98,7 @@ Though it is best to use a single incoming webhook for a specific purpose, in so
 
 <p class="alert alert_info"><i class="ts_icon ts_icon_info_circle"></i> You <strong>cannot override</strong> the default username, icon, or channel for incoming webhooks attached to <a href="/slack-apps">Slack apps</a>. Instead, these values will stubbornly inherit from the associated Slack app configuration.</p>
 
-####Customizing your username and icon
+#### Customizing your username and icon
 
 Incoming webhooks originate from a default identity you configured when originally creating your webhook. You can override a custom integration's configured name with the `username` field in your JSON payload.
 
@@ -114,7 +114,7 @@ An overridden username and icon could look like this:
 
 ![Screenshot of a simple incoming webhook with an overridden icon and name](/img/api/incoming_name_icon.png)
 
-####Channel override
+#### Channel override
 
 Incoming webhooks output to a default channel and can only send messages to a single channel at a time. You can override a custom integration's configured channel by specifying the `channel` field in your JSON payload.
 
@@ -129,13 +129,13 @@ If you prefer, you can also specify a channel ID or user ID like so: `"channel":
 
 ---
 
-###Advanced message formatting
+### Advanced message formatting
 
 You can use [Slack's standard message markup](/page_formatting.md) to add simple formatting to your messages. You can also use [message attachments](/page_attachments.md) to display richly-formatted message blocks.
 
 ![Screenshot of a simple incoming webhook with an attachment](/img/api/attachment_fields.png)
 
-###Putting it all together
+### Putting it all together
 
 Here is a sample [curl](http://curl.haxx.se/) command for posting to a channel using the payload parameter:
 
@@ -155,7 +155,7 @@ With either approach, this will be displayed in the #general channel as:
 
 ![Screenshot of a simple incoming webhook with an icon and links](/img/api/incoming_example.png)
 
-###Share your incoming webhook as a Slack app
+### Share your incoming webhook as a Slack app
 You will be able to set up an incoming webhook when you create a [Slack app](/slack-apps) and configure a [Slack button](/docs/slack-button).
 
 Once a user installs your app, you will exchange the `code` for an access token using [the `oauth.access` method](https://api.slack.com/methods/oauth.access). The JSON response from this API call will contain the access token and incoming webhook URL:
