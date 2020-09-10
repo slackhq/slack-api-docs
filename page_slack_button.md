@@ -52,7 +52,7 @@ You will need to exchange the `code` for an access token using [the `oauth.acces
 	{
 		"access_token": "xoxp-XXXXXXXX-XXXXXXXX-XXXXX",
 		"scope": "incoming-webhook,commands,bot",
-		"team_name": "Team Installing Your Hook",
+		"team_name": "Team Installing Your App",
 		"team_id": "XXXXXXXXXX",
 		"incoming_webhook": {
 			"url": "https://hooks.slack.com/TXXXXX/BXXXXX/XXXXXXXXXX",
@@ -88,7 +88,7 @@ Bot naming error:  Since your bot inherits the name of the app, and is beholden 
 
 Email [integrations@slack.com](mailto:integrations@slack.com) with any questions, feedback, or ideas that would help you get more use out of this, and we'll be more than happy to help.
 
-###Share Your Incoming Webhook as a Slack App
+### Share Your Incoming Webhook as a Slack App
 
-[Create a Slack app](/slack-apps) to to package and distribute your incoming webhook and share it in our [application directory](https://slack.com/apps).
+[Create a Slack app](/slack-apps) to package and distribute your incoming webhook and share it in our [application directory](https://slack.com/apps).
 
